@@ -1,0 +1,43 @@
+<header  class="navbar navbar-expand fixed-top"
+    [isAuthorised]="isAuthorised"
+    [activeLink]="activeLink"
+    [ngClass]="{ 'navbar-hidden' : !showMenu, 'navbar-visible-mobile': showMobileMenu }"
+    (tabSwitch)="switchTab($event)"
+    (menuSwitch)="switchMenu($event)"
+    rsl-header
+></header>
+
+<main
+    role="main"
+    class="content"
+    id="content"
+    [ngClass]="{ 'no-space' : !showSpace, 'map-height': activeTab == 'home'}"
+>
+    <div
+        class="map-container"
+        [mapHeight] = "mapHeight"
+        (toMap)="switchTab('map')"
+        rsl-gmap
+    ></div>
+    <div
+        class="space-wrapper"
+        *ngIf="showSpace"
+        (noSpace)="showSpace = false"
+        (toRegister)="switchTab('register')"
+        rsl-take-space
+    ></div>
+    <div
+        class="tab-content"
+        [activeTab]="activeTab"
+        [isAuthorised]="isAuthorised"
+        (switchTab)="switchTab($event)"
+        rsl-map
+    ></div>
+
+</main>
+
+<rsl-home *ngIf="activeTab == 'home'" (tabSwitch)="switchTab($event)"></rsl-home>
+
+<footer class="footer" (tabSwitch)="switchTab($event)" #rslFooter rsl-footer></footer>
+
+<iframe *ngIf="iframeUrl" [src]="iframeUrl" width="1" height="1" frameborder="0" style="display: none;"></iframe>

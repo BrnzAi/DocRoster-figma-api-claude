@@ -1,0 +1,68 @@
+<div class="content-item">
+    <article class="form-container register">
+        <div class="scroll-wrapper">
+            <header>
+                <img [src]="user ? user.meta.avatar : 'https://api.brn.ai/img/default-client-avatar.png'" alt="" *ngIf="user">
+                <h2 *ngIf="user">{{ user.name }}</h2>
+                <h3 *ngIf="user">{{ user.email }}</h3>
+            </header>
+
+            <form [formGroup]="settingsForm" (ngSubmit)="onSubmit()">
+                <div class="wrap-input wrap-input-name">
+                    <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'invalid' : name.invalid && submitted }" placeholder="Full name">
+                </div>
+                <div class="wrap-input-file">
+                    <span>Upload picture&hellip;</span>
+                    <input type="file" class="form-control-file" [ngClass]="{ 'invalid' : avatar.invalid && submitted }" formControlName="avatar" accept="image/*" (change)="onAvatarChanged($event.target.files)">
+                </div>
+                <div class="wrap-input wrap-input-company">
+                    <input type="text" formControlName="companyname" class="form-control" [ngClass]="{ 'invalid' : companyname.invalid && submitted }" placeholder="Company name">
+                </div>
+                <div class="wrap-input wrap-input-website">
+                    <input type="text" formControlName="website" class="form-control" [ngClass]="{ 'invalid' : website.invalid && submitted }" placeholder="Website">
+                </div>
+                <div class="wrap-input wrap-input-zoom">
+                    <input type="text" formControlName="zoom" class="form-control" [ngClass]="{ 'invalid' : zoom.invalid && submitted }" placeholder="Zoom link">
+                </div>
+                <div class="wrap-input wrap-input-down">
+                    <select class="form-control" [ngClass]="{ 'invalid' : buyer_agent.invalid && submitted }" formControlName="buyer_agent">
+                        <option *ngFor="let agent of buyerAgents" [ngValue]="agent">
+                            {{ agent.name }}
+                        </option>
+                    </select>
+                </div>
+                <ng-multiselect-dropdown
+                        #dropdownAreas
+                        [placeholder]="'Area of Real Estate'"
+                        [data]="areas"
+                        [(ngModel)]="selectedAreas"
+                        [settings]="areasSettings"
+                        [ngModelOptions]="{standalone: true}"
+                        (onSelectAll)="dropdownAreas.closeDropdown()"
+                >
+                </ng-multiselect-dropdown>
+                <ng-multiselect-dropdown
+                        #dropdownLanguages
+                        [placeholder]="'What languages are you fluent in?'"
+                        [data]="languagesList"
+                        [(ngModel)]="selectedLanguages"
+                        [settings]="languagesListSettings"
+                        [ngModelOptions]="{standalone: true}"
+                        (onSelectAll)="dropdownLanguages.closeDropdown()"
+                >
+                </ng-multiselect-dropdown>
+                <div class="wrap-input wrap-input-experience">
+                    <input type="text" formControlName="experience" class="form-control" [ngClass]="{ 'invalid' : experience.invalid && submitted }" placeholder="Experience (years)">
+                </div>
+                <textarea class="form-control" [ngClass]="{ 'invalid' : aboutcompany.invalid && submitted }" placeholder="About&hellip;" formControlName="aboutcompany"></textarea>
+
+                <button type="submit" class="btn btn-primary btn-arrow" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" *ngIf="loading"></span>
+                    {{loading ? 'Loading...' : 'Save'}}
+                </button>
+
+                <p><a href="#" (click)="logout();false">Logout</a></p>
+            </form>
+        </div>
+    </article>
+</div>

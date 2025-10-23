@@ -1,0 +1,23 @@
+<div class="content-item">
+    <article class="form-container register">
+        <div class="scroll-wrapper">
+            <header>
+                <img src="/assets/images/LOGO.png" alt="">
+                <h2>Realty Street Leads</h2>
+                <h3>Support Manager</h3>
+            </header>
+
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="wrap-input wrap-input-email">
+                    <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'invalid' : email.invalid && submitted }" placeholder="Email">
+                </div>
+                <textarea class="form-control" [ngClass]="{ 'invalid' : message.invalid && submitted }" placeholder="Message&hellip;" formControlName="message"></textarea>
+
+                <button type="submit" class="btn btn-primary btn-arrow" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" *ngIf="loading"></span>
+                    {{loading ? 'Loading...' : 'Send'}}
+                </button>
+            </form>
+        </div>
+    </article>
+</div>

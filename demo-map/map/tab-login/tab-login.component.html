@@ -1,0 +1,29 @@
+<div class="content-item">
+    <article class="form-container login">
+        <div class="scroll-wrapper">
+            <header>
+                <img src="/assets/images/LOGO.png" alt="">
+                <h2>Realty Street Leads</h2>
+                <h3>Authorization</h3>
+            </header>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="wrap-input wrap-input-email">
+                    <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'invalid' : email.invalid && submitted }" placeholder="Email">
+                </div>
+                <div class="wrap-input wrap-input-password">
+                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'invalid' : password.invalid && submitted }" placeholder="Password">
+                </div>
+
+                <div class="form-error" [innerHtml]="formError"></div>
+
+                <button type="submit" class="btn btn-primary btn-arrow" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" *ngIf="loading"></span>
+                    {{loading ? 'Loading...' : 'Log in'}}
+                </button>
+
+                <p><a href="https://login.realtystreetleads.com/recover">Forgot password?</a></p>
+            </form>
+        </div>
+    </article>
+</div>

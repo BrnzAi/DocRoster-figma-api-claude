@@ -1,0 +1,57 @@
+<agm-map
+    [latitude]="mainLocation.latitude"
+    [longitude]="mainLocation.longitude"
+    [zoom]="mainLocation.zoom"
+    [streetViewControl]="false"
+    (boundsChange)="_boundsChange($event)"
+    role="main"
+>
+    <agm-marker
+        *ngFor="let realtyMarker of realtyMarkers"
+        [latitude]="realtyMarker.latitude"
+        [longitude]="realtyMarker.longitude"
+        [title] = "realtyMarker.title"
+        [markerDraggable] = "realtyMarker.draggable"
+        (markerClick) = "setRealtorActive(realtyMarker.realtor_id); setMarkerActive(realtyMarker.id);"
+        [label] = "{
+            fontSize: '12px',
+            fontWeight: 'bold',
+            text: getRealtorName(realtyMarker.realtor_id)
+        }"
+        [iconUrl] = "{
+            url: '/assets/images/logo-pin.png',
+            scaledSize: {
+                width: 20,
+                height: 23.5
+            },
+            labelOrigin: {
+                x: 10,
+                y: -5
+            }
+        }"
+    >
+        <agm-info-window *ngIf="user && user.id === realtyMarker.realtor_id" #infoWindow>
+            <p>Delete this ad?</p>
+            <a (click)="deleteAd(realtyMarker)" href="#" style="float: left;">Yes</a>
+            <a (click)="infoWindow.close()" href="#" style="float: right;">No</a>
+        </agm-info-window>
+    </agm-marker>
+
+    <agm-marker
+        *ngIf="tmpMarker"
+        [latitude]="tmpMarker.latitude"
+        [longitude]="tmpMarker.longitude"
+        [title] = "tmpMarker.title"
+        [markerDraggable] = "true"
+        (dragEnd) = "dragendTmpMarker($event)"
+        (mouseOver) = "tmpMarkerIcon='/assets/images/logo-pin.png'"
+        (mouseOut) = "tmpMarkerIcon={
+            url: '/assets/images/logo-pin.png',
+            scaledSize: {
+                width: 20,
+                height: 23.5
+            }
+        }"
+        [iconUrl] = "tmpMarkerIcon"
+    ></agm-marker>
+</agm-map>

@@ -1,0 +1,172 @@
+<div class="navbar-brand">
+    <div (click)="navigateTo('home');false">
+        <img src="/assets/images/LOGO.png" width="48" height="38" alt="">
+    </div>
+
+    <form class="form-inline form-search" onsubmit="return false">
+        <input type="text" class="form-control" placeholder="Enter Address" #searchMobile>
+        <button class="btn btn-search btn-search_icon" type="button">
+            <i class="material-icons">search</i>
+        </button>
+        <button class="btn btn-search" type="button">Find Your Agent</button>
+    </form>
+
+    <a class="nav-hide" href="#" (click)="showMenu(false);false">
+        <i class="material-icons">
+            close
+        </i>
+    </a>
+    <a class="nav-show" href="#" (click)="showMenu(true);false">
+        <i class="material-icons">
+            menu
+        </i>
+    </a>
+</div>
+
+<div class="navbar-primary" #navContainer>
+    <div class="navbar-wrap">
+        <div class="navbar-brand" (click)="navigateTo('home');false">
+            <img src="/assets/images/LOGO.png" width="48" height="38" alt="">
+            <span>Realty Street Chat</span>
+        </div>
+
+        <form class="form-inline form-search" onsubmit="return false">
+            <input type="text" class="form-control" placeholder="Enter Address" #search>
+            <button class="btn btn-search btn-search_icon" type="button">
+                <i class="material-icons">search</i>
+            </button>
+            <button class="btn btn-search" type="button">Find Your Agent</button>
+        </form>
+
+        <ul class="navbar-nav" #mainNav>
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('map');false"
+                   [ngClass]="{ 'active' : 'map'==activeLink }"
+                >
+                    Map
+                </a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#"-->
+<!--                   (click)="navigateTo('pricing');false"-->
+<!--                   [ngClass]="{ 'active' : 'pricing'==activeLink }"-->
+<!--                >-->
+<!--                    Services-->
+<!--                </a>-->
+<!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('about');false"
+                   [ngClass]="{ 'active' : 'about'==activeLink }"
+                >
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('contact');false"
+                   [ngClass]="{ 'active' : 'contact'==activeLink }"
+                >
+                    Contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://blog.realtystreetleads.com/">
+                    Blog
+                </a>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="nav-item" *ngIf="!isAuthorised">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('login');false"
+                   [ngClass]="{ 'active' : 'login'==activeLink }"
+                >Agent Log In</a>
+            </li>
+            <li class="nav-item" *ngIf="!isAuthorised">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('register');false"
+                   [ngClass]="{ 'active' : 'register'==activeLink }"
+                >Agent Register</a>
+            </li>
+            <li class="nav-item" *ngIf="isAuthorised">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo(user.plan.status=='active'?'placead':'pricing');false"
+                   [ngClass]="{ 'active' : 'placead'==activeLink }"
+                >
+                    New PinPoint/Ad{{numberOfPins}}
+                </a>
+            </li>
+            <li class="nav-item" *ngIf="isAuthorised">
+                <a class="nav-link" href="#"
+                   (click)="navigateTo('logout');false"
+                   [ngClass]="{ 'active' : 'logout'==activeLink }"
+                >Profile</a>
+            </li>
+            <li class="nav-item" *ngIf="isAuthorised">
+                <a class="nav-link" href="https://app.realtystreetleads.com/"
+                >Dashboard</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="navbar-mobile">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('map');false"
+               [ngClass]="{ 'active' : 'map'==activeLink }"
+            >Map</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link" href="#"-->
+<!--               (click)="navigateTo('pricing');false"-->
+<!--               [ngClass]="{ 'active' : 'pricing'==activeLink }"-->
+<!--            >Services</a>-->
+<!--        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('about');false"
+               [ngClass]="{ 'active' : 'about'==activeLink }"
+            >About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('contact');false"
+               [ngClass]="{ 'active' : 'contact'==activeLink }"
+            >Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://blog.realtystreetleads.com/">Blog</a>
+        </li>
+        <li class="nav-item" *ngIf="!isAuthorised">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('login');false"
+               [ngClass]="{ 'active' : 'login'==activeLink }"
+            >Agent Log In</a>
+        </li>
+        <li class="nav-item" *ngIf="!isAuthorised">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('register');false"
+               [ngClass]="{ 'active' : 'register'==activeLink }"
+            >Agent Register</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthorised">
+            <a class="nav-link" href="#"
+               (click)="navigateTo(user.plan.status=='active'?'placead':'pricing');false"
+               [ngClass]="{ 'active' : 'placead'==activeLink }"
+            >New PinPoint/Ad{{numberOfPins}}</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthorised && user">
+            <a class="nav-link" href="#"
+               (click)="navigateTo('logout');false"
+               [ngClass]="{ 'active' : 'profile'==activeLink }"
+            >Profile</a>
+        </li>
+        <li class="nav-item" *ngIf="isAuthorised">
+            <a class="nav-link" href="http://app.realtystreetleads.com/"
+            >Backend</a>
+        </li>
+    </ul>
+</div>

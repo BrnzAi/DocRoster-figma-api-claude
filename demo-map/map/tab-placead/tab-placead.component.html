@@ -1,0 +1,57 @@
+<div class="content-item">
+    <article class="form-container placead">
+        <div class="scroll-wrapper">
+            <header>
+                <img src="/assets/images/LOGO.png" alt="">
+                <h2>Realty Street Leads</h2>
+                <h3>Place an AD</h3>
+            </header>
+
+            <form [hidden]="!showForm" [formGroup]="placeadForm" (ngSubmit)="onSubmit()">
+                <p>
+                    Register, and start adding your profile, flyers, and market reports to any street. Profiles can only be viewed on the map once you add a street location.
+                </p>
+                <p>
+                    Basic pkg, includes your profile, text message and chat services on any five (5) street location. Change your street locations any time.
+                </p>
+                <p>
+                    Upgrade your subscription to include flyers and market reports. Change, delete your street locations, flyers, reports at any time.
+                </p>
+                <p>
+                    <strong>Flyers:</strong> upload only image format: jpeg, gif,
+                    <br>
+                    <strong>Market Reports:</strong> upload only pdf or doc format
+                </p>
+                <div class="wrap-input wrap-input-address">
+                    <input type="text" class="form-control" [ngClass]="{ 'invalid' : !markerAdded && submitted }" placeholder="Address" #search>
+                </div>
+                <textarea class="form-control" [ngClass]="{ 'invalid' : message.invalid && submitted }" formControlName="message" placeholder="Message&hellip;"></textarea>
+                <ng-container *ngIf="user && user.plan && user.plan.mode !== 'free'">
+                    <div *ngIf="!flyerImg" class="wrap-input-file">
+                        <span>Upload flyer&hellip;</span>
+                        <input type="file" class="form-control-file" [ngClass]="{ 'invalid' : flyer.invalid && submitted }" formControlName="flyer" accept="image/*" (change)="onFlyerChanged($event.target.files)">
+                    </div>
+                </ng-container>
+                <p *ngIf="flyerImg">
+                    <img [src]="flyerImg" alt="">
+                </p>
+                <ng-container *ngIf="user && user.plan && user.plan.mode !== 'free'">
+                    <div *ngIf="!marketReportFile" class="wrap-input-file">
+                        <span>Upload market report&hellip;</span>
+                        <input type="file" class="form-control-file" [ngClass]="{ 'invalid' : marketReport.invalid && submitted }" formControlName="marketReport" accept="application/pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" (change)="onMarketReportChanged($event.target.files)">
+                    </div>
+                </ng-container>
+                <p *ngIf="marketReportFile">
+                    <a [href]="marketReportFile" target="_blank" download><strong>Download market report</strong></a>
+                </p>
+                <button type="submit" class="btn btn-primary btn-arrow" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" *ngIf="loading"></span>
+                    {{loading ? 'Saving...' : 'Publish'}}
+                </button>
+            </form>
+            <form [hidden]="showForm">
+                <p>You have exceeded the amount of ads. Please upgrade or delete street locations.</p>
+            </form>
+        </div>
+    </article>
+</div>

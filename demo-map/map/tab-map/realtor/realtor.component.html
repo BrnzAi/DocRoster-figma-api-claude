@@ -1,0 +1,57 @@
+<div class="realtor-wrapper" [ngClass]="isActive ? 'realtor-wrapper-details' : ''">
+    <article class="realtor"
+        [ngClass]="{
+            'active' : isHovered || isTooltipOpened || isActive,
+            'show-details': isActive,
+            'premium': (realtor.plan.id === paymentConfig.plans.ultimate.id || realtor.plan.id === paymentConfig.plans.ultimate_monthly.id)
+        }"
+        (mouseover)="isHovered=true"
+        (mouseout)="isHovered=false"
+    >
+        <img [src]="realtor.meta.avatar" width="64" height="64" alt="">
+        <h2><span>{{realtor.name}}</span></h2>
+        <p *ngIf="realtor.meta.companyname">{{realtor.meta.companyname}}.</p>
+        <p *ngIf="realtor.meta.buyer_agent">{{realtor.meta.buyer_agent.name}}.</p>
+        <p *ngIf="areas" [innerHTML]="areas + '.'"></p>
+        <p *ngIf="isActive && activeMarker && activeMarker.image" class="flyer-link">
+            <a [href]="activeMarker.image" target="_blank"><strong>View flyer</strong></a>
+        </p>
+        <p *ngIf="isActive && activeMarker && activeMarker.market_report">
+            <a [href]="activeMarker.market_report" target="_blank" download><strong>Download market report</strong></a>
+        </p>
+        <div *ngIf="realtor.meta.experience || realtor.meta.aboutcompany || allAreas || allLanguages || website" class="more-info">
+            <ng-template #companyContent>
+                <h3 *ngIf="realtor.meta.experience">Realtor, {{realtor.meta.experience}} Years Exp.</h3>
+                <p *ngIf="realtor.meta.aboutcompany" class="chat">{{realtor.meta.aboutcompany}}</p>
+                <p *ngIf="allAreas" class="areas">{{allAreas}}</p>
+                <p *ngIf="allLanguages" class="languages">{{allLanguages}}</p>
+                <p *ngIf="website" class="link">
+                    <a [href]="website" target="_blank">
+                        {{realtor.meta.website}}
+                    </a>
+                </p>
+            </ng-template>
+            <a href="#"
+               [ngbTooltip]="companyContent"
+               [placement]="isMobile() ? 'left' : 'right'"
+               [autoClose]="'outside'"
+               triggers="click"
+               (hidden)="isTooltipOpened = false"
+               (shown)="isTooltipOpened = true"
+               container="body"
+               (click)="false"
+            >
+                More info
+                <i class="material-icons">
+                    keyboard_arrow_down
+                </i>
+            </a>
+        </div>
+
+        <div class="btn-chat-wrapper">
+            <button type="button" class="btn btn-primary btn-chat" (click)="showChat()">Chat</button>
+            <a *ngIf="realtor.meta.zoom" [href]="realtor.meta.zoom" target="_blank" class="btn btn-primary btn-chat" style="margin-left: 2px">Zoom</a>
+            <button type="button" class="btn btn-primary btn-close" (click)="hideChat()">Close</button>
+        </div>
+    </article>
+</div>

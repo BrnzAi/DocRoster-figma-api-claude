@@ -1,0 +1,139 @@
+<div class="content-group carousel-inner">
+    <div *ngIf="showFreePlan" class="content-item carousel-item" [ngClass]="{ 'active' : activeSlide==1 }">
+        <article class="free">
+            <div class="scroll-wrapper">
+                <header>
+                    <h2>Free<small> /yr</small></h2>
+                    <h3>
+                        Starter
+                    </h3>
+                </header>
+
+                <ul>
+                    <li>Add your profile on 5x street locations (No flyers or Reports)</li>
+                    <li>All services are free of charge for real estate agents (no credit card required)</li>
+                    <li>Name and Bio of Agent</li>
+                    <li>Company Logo or Profile Picture</li>
+                    <li>Chatbot Automation for Lead Generation</li>
+                    <li>Live Chat- Chat & Text with Clients and Prospects</li>
+                    <li>Video Conferencing</li>
+                    <li>Dynamic Map Search</li>
+                    <li title="ie. 'I have 3x Buyers interested in purchasing a home on this street'; 'I just sold a home on this street, and have more buyers interest'">Sales Tag Line</li>
+                    <li>Buyer Lead Generation-Local and International</li>
+                    <li>Client Management (CRM)</li>
+                    <li>No Set Up Fees</li>
+                </ul>
+
+                <button class="btn btn-primary"
+                        type="submit"
+                        *ngIf="!currentPlan || currentPlan && currentPlan.mode == 'free'"
+                        [ngClass]="{ 'btn-current' : currentPlan && currentPlan.mode == 'free'}"
+                        (click)="toRegister.emit();false"
+                >{{currentPlan && currentPlan.mode == 'free' ? 'Current' : 'Select this plan'}}</button>
+            </div>
+        </article>
+    </div>
+
+    <div class="content-item carousel-item" [ngClass]="{ 'active' : activeSlide==(showFreePlan ? 2 : 1) }">
+        <article>
+            <div class="scroll-wrapper">
+                <header>
+                    <div class="switch">
+                        <span class="switch-month" [ngClass]="{'active': switcherProfessional == 'month'}" (click)="switcherProfessional = 'month'">mo</span>
+                        <span class="switch-year" [ngClass]="{'active': switcherProfessional == 'year'}" (click)="switcherProfessional = 'year'">yr</span>
+                    </div>
+
+                    <h2 *ngIf="switcherProfessional == 'year'">${{paymentConfig.plans.professional.price}}</h2>
+                    <h2 *ngIf="switcherProfessional == 'month'">${{paymentConfig.plans.professional_monthly.price}}</h2>
+                    <h3>
+                        Professional
+                    </h3>
+                </header>
+
+                <ul>
+                    <li class="highlight">Add your profile, Flyer or Report to 5x street locations. Change locations or flyers/reports anytime.</li>
+                    <li>Name and Bio of Agent</li>
+                    <li>Company Logo or Profile Picture</li>
+                    <li>Chatbot Automation for Lead Generation</li>
+                    <li>Live Chat- Chat & Text with Clients and Prospects</li>
+                    <li>Video Conferencing</li>
+                    <li>Dynamic Map Search</li>
+                    <li title="ie. 'I have 3x Buyers interested in purchasing a home on this street'; 'I just sold a home on this street, and have more buyers interest'">Sales Tag Line</li>
+                    <li>Buyer Lead Generation-Local and International</li>
+                    <li>Client Management (CRM)</li>
+                    <li>No Set Up Fees</li>
+                </ul>
+
+                <button class="btn btn-primary"
+                    type="submit"
+                    *ngIf="switcherProfessional == 'year' && !(currentPlan && currentPlan.status == 'active' && (paymentConfig.plans.ultimate.id == currentPlan.id || paymentConfig.plans.ultimate_monthly.id == currentPlan.id))"
+                    [ngClass]="{ 'btn-current' : currentPlan && currentPlan.status == 'active' && paymentConfig.plans.professional.id == currentPlan.id}"
+                    (click)="checkoutClick('professional');false"
+                >{{currentPlan && paymentConfig.plans.professional.id == currentPlan.id ? 'Current' : 'Select this plan'}}</button>
+                <button class="btn btn-primary"
+                    type="submit"
+                    *ngIf="switcherProfessional == 'month' && !(currentPlan && currentPlan.status == 'active' && (paymentConfig.plans.ultimate.id == currentPlan.id || paymentConfig.plans.ultimate_monthly.id == currentPlan.id))"
+                    [ngClass]="{ 'btn-current' : currentPlan && currentPlan.status == 'active' && paymentConfig.plans.professional.id == currentPlan.id}"
+                    (click)="checkoutClick('professional_monthly');false"
+                >{{currentPlan && paymentConfig.plans.professional_monthly.id == currentPlan.id ? 'Current' : 'Select this plan'}}</button>
+            </div>
+        </article>
+    </div>
+
+    <div class="content-item carousel-item" [ngClass]="{ 'active' : activeSlide==(showFreePlan ? 3 : 2) }">
+        <article class="premium">
+            <div class="scroll-wrapper">
+                <header>
+                    <div class="switch">
+                        <span class="switch-month" [ngClass]="{'active': switcherPlatinum == 'month'}" (click)="switcherPlatinum = 'month'">mo</span>
+                        <span class="switch-year" [ngClass]="{'active': switcherPlatinum == 'year'}" (click)="switcherPlatinum = 'year'">yr</span>
+                    </div>
+
+                    <h2 *ngIf="switcherPlatinum == 'year'">${{paymentConfig.plans.ultimate.price}}</h2>
+                    <h2 *ngIf="switcherPlatinum == 'month'">${{paymentConfig.plans.ultimate_monthly.price}}</h2>
+                    <h3>
+                        Platinum
+                    </h3>
+                </header>
+
+                <ul>
+                    <li class="highlight">Add your profile, Flyer or Report to 10x street locations. Change locations or flyers/reports anytime. If you require more than 10 street locations, please contact&nbsp;us: <a href="mailto: info@realtystreetleads.com">info@realtystreetleads.com</a></li>
+                    <li>Name and Bio of Agent</li>
+                    <li>Company Logo or Profile Picture</li>
+                    <li>Chatbot Automation for Lead Generation</li>
+                    <li>Live Chat- Chat & Text with Clients and Prospects</li>
+                    <li>Video Conferencing</li>
+                    <li>Dynamic Map Search</li>
+                    <li title="ie. 'I have 3x Buyers interested in purchasing a home on this street'; 'I just sold a home on this street, and have more buyers interested'">Sales Tag Line</li>
+                    <li>Buyer Lead Generation-Local and International</li>
+                    <li>Client Management (CRM)</li>
+                    <li>No Set Up Fees</li>
+                </ul>
+
+                <button class="btn btn-primary"
+                    *ngIf="switcherPlatinum == 'year'"
+                    type="submit"
+                    [ngClass]="{ 'btn-current' : currentPlan && currentPlan.status == 'active' && paymentConfig.plans.ultimate.id == currentPlan.id}"
+                    (click)="checkoutClick('ultimate');false"
+                >{{currentPlan && paymentConfig.plans.ultimate.id == currentPlan.id ? 'Current' : 'Select this plan'}}</button>
+                <button class="btn btn-primary"
+                    *ngIf="switcherPlatinum == 'month'"
+                    type="submit"
+                    [ngClass]="{ 'btn-current' : currentPlan && currentPlan.status == 'active' && paymentConfig.plans.ultimate_monthly.id == currentPlan.id}"
+                    (click)="checkoutClick('ultimate_monthly');false"
+                >{{currentPlan && paymentConfig.plans.ultimate_monthly.id == currentPlan.id ? 'Current' : 'Select this plan'}}</button>
+            </div>
+        </article>
+    </div>
+</div>
+
+<a class="carousel-control-prev" href="#" (click)="prevSlide(); false">
+    <i class="material-icons">
+        navigate_before
+    </i>
+</a>
+<a class="carousel-control-next" href="#" (click)="nextSlide(); false">
+    <i class="material-icons">
+        navigate_next
+    </i>
+</a>

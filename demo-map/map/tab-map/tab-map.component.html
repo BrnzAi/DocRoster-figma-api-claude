@@ -1,0 +1,121 @@
+<div class="content-item" [style.display]="activeRealtor || !mapRealtors.length ? 'flex' : ''">
+    <section class="realtors scrollable" #realtorsContainer>
+        <div class="scroll-container" #scrollContainer>
+            <rsl-realtor
+                *ngFor="let realtor of mapRealtors"
+                [realtor]="realtor"
+                rsl-realtor
+                >
+            </rsl-realtor>
+
+            <div class="realtor-wrapper realtor-wrapper-example"
+                 *ngIf="!mapRealtors.length"
+                 [ngClass]="{
+                     'realtor-wrapper-active' : exampleChatVisible
+                 }"
+            >
+                <article class="realtor premium example"
+                    [ngClass]="{
+                        'active' : isHovered || isTooltipOpened || exampleChatVisible,
+                        'show-details': exampleChatVisible
+                    }"
+                    (mouseover)="isHovered=true"
+                    (mouseout)="isHovered=false"
+                >
+                    <img src="/assets/images/bob_smith.png" width="64" height="64" alt="">
+                    <h2><span>Bob Smith</span></h2>
+                    <p>ABCZ  Real Estate.</p>
+                    <p>Real Estate Broker.</p>
+                    <div class="more-info">
+                        <ng-template #companyContent>
+                            <h3>Realtor, 10 Years Exp.</h3>
+                            <p class="chat">I have 3x motivated buyers interested in purchasing a home on your street, please contact me.</p>
+                            <p class="languages">English, French</p>
+                            <p class="link">
+                                <a href="https://www.realtystreetleads.com/" target="_blank">
+                                    www.realtystreetleads.com
+                                </a>
+                            </p>
+                            <p class="info">Add your pinpoint bio/ad to any street location; introduce yourself to homeowners and other realtors, and let them know you have buyers interested in purchasing a home on their street Through our Chatbot and Chatlive portal, you can  use the template(s) provided or customize your own dialogue.</p>
+                        </ng-template>
+                        <a href="#"
+                           [ngbTooltip]="companyContent"
+                           [placement]="isMobile() ? 'left' : 'right'"
+                           [autoClose]="'outside'"
+                           triggers="click"
+                           (hidden)="isTooltipOpened = false"
+                           (shown)="isTooltipOpened = true"
+                           container="body"
+                           (click)="false"
+                        >
+                            More info
+                            <i class="material-icons">
+                                keyboard_arrow_down
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="btn-chat-wrapper">
+                        <button type="button" class="btn btn-primary btn-chat" (click)="showExampleChat()">Chat</button>
+                        <button type="button" class="btn btn-primary btn-close" (click)="hideExampleChat()">Close</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="scroll-panel" *ngIf="showScrollPanel && showMovingScrollPanel">
+                <button type="button" class="btn btn-scroll" data-direction="down" (click)="scrollDown()" [disabled]="disableButtonDown">
+                    <i class="material-icons">
+                        keyboard_arrow_down
+                    </i>
+                </button>
+                <button type="button" class="btn btn-scroll" data-direction="up" (click)="scrollUp()" [disabled]="disableButtonUp">
+                    <i class="material-icons">
+                        keyboard_arrow_up
+                    </i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="details"
+        *ngIf="isActive && activeRealtor"
+        [activeRealtor]="activeRealtor"
+        [style.display]="activeRealtor ? 'flex' : 'none'"
+        rsl-details>
+    </div>
+    <div *ngIf="isActive && activeMarker && activeMarker.image && showFlyer" class="flyer">
+        <a [href]="activeMarker.image" target="_blank">
+            <img [src]="activeMarker.image" alt="">
+            <button type="button" class="btn flyer__btn-close" (click)="showFlyer = false; false;">
+                <i class="material-icons">close</i>
+            </button>
+        </a>
+    </div>
+    <div class="details"
+         *ngIf="isActive && !mapRealtors.length && exampleChatVisible"
+         [style.display]="'flex'">
+        <div #chatcontainer></div>
+    </div>
+    <div class="scroll-panel" *ngIf="showScrollPanel && !showMovingScrollPanel">
+        <button type="button" class="btn btn-scroll" data-direction="down" (click)="scrollDown()" [disabled]="disableButtonDown">
+            <i class="material-icons">
+                keyboard_arrow_down
+            </i>
+        </button>
+        <button type="button" class="btn btn-scroll" data-direction="up" (click)="scrollUp()" [disabled]="disableButtonUp">
+            <i class="material-icons">
+                keyboard_arrow_up
+            </i>
+        </button>
+    </div>
+
+    <!--<a href="#" *ngIf="showButtonPrev()" class="carousel-control-prev" role="button" data-slide="prev" (click)="activatePrev()">-->
+        <!--<i class="material-icons">-->
+            <!--navigate_before-->
+        <!--</i>-->
+    <!--</a>-->
+    <!--<a href="#" *ngIf="showButtonNext()" class="carousel-control-next" role="button" data-slide="next" (click)="activateNext()">-->
+        <!--<i class="material-icons">-->
+            <!--navigate_next-->
+        <!--</i>-->
+    <!--</a>-->
+</div>

@@ -1,0 +1,59 @@
+<div
+    class="tab-pane"
+    [ngClass]="{ 'active' : activeTab=='map',  'active-home' : activeTab=='home' }"
+    [isActive]="activeTab == 'map'"
+    id="home"
+    rsl-tab-map
+></div>
+
+<div
+    class="tab-pane carousel"
+    [ngClass]="{ 'active' : activeTab=='pricing' }"
+    (toRegister)="toRegister()"
+    (toPlacead)="toPlacead()" rsl-tab-pricing
+></div>
+
+<div
+    class="tab-pane"
+    [ngClass]="{ 'active' : activeTab=='about' }"
+    rsl-tab-about
+></div>
+
+<div
+    class="tab-pane"
+    [ngClass]="{ 'active' : activeTab=='contact' }"
+    rsl-tab-contact
+></div>
+
+<div
+        *ngIf="isAuthorised"
+        class="tab-pane"
+        [ngClass]="{ 'active' : activeTab=='placead' }"
+        (toMap)="toMap()"
+        rsl-tab-placead></div>
+
+<div
+        *ngIf="isAuthorised"
+        class="tab-pane"
+        [ngClass]="{ 'active' : activeTab=='logout' }"
+        (toLogout)="toLogout()"
+        (toMap)="toMap()"
+        rsl-tab-logout></div>
+
+<div
+        *ngIf="!isAuthorised"
+        class="tab-pane"
+        [ngClass]="{ 'active' : activeTab=='login' }"
+        (toRegister)="toRegister()"
+        (toMap)="toMap()"
+        rsl-tab-login></div>
+
+<div
+        *ngIf="!isAuthorised"
+        class="tab-pane"
+        [ngClass]="{ 'active' : activeTab=='register' }"
+        (toLogin)="toLogin()"
+        (toMap)="toMap()"
+        rsl-tab-register></div>
+
+<div class="tab-pane" [ngClass]="{ 'active' : activeTab=='privacy' }" (toMap)="toMap()" rsl-tab-privacy></div>

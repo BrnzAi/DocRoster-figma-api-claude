@@ -1,0 +1,79 @@
+<div class="content-item">
+    <article class="form-container register">
+        <div class="scroll-wrapper">
+            <header>
+                <img src="/assets/images/LOGO.png" alt="">
+                <h2>Realty Street Leads</h2>
+                <h3>Registration</h3>
+            </header>
+
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="wrap-input wrap-input-email">
+                    <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'invalid' : email.invalid && submitted }" placeholder="Email">
+                </div>
+                <div class="wrap-input wrap-input-password">
+                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'invalid' : password.invalid && submitted }" placeholder="Password" autocomplete="new-password">
+                </div>
+                <div class="wrap-input wrap-input-password">
+                    <input type="password" formControlName="password_confirm" class="form-control" [ngClass]="{ 'invalid' : password_confirm.invalid && submitted }" placeholder="Confirm password">
+                </div>
+                <div class="wrap-input wrap-input-name">
+                    <input type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'invalid' : firstname.invalid && submitted }" placeholder="First name">
+                </div>
+                <div class="wrap-input wrap-input-name">
+                    <input type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'invalid' : lastname.invalid && submitted }" placeholder="Last name">
+                </div>
+                <div class="wrap-input wrap-input-company">
+                    <input type="text" formControlName="companyname" class="form-control" [ngClass]="{ 'invalid' : companyname.invalid && submitted }" placeholder="Company name">
+                </div>
+                <div class="wrap-input wrap-input-website">
+                    <input type="text" formControlName="website" class="form-control" [ngClass]="{ 'invalid' : website.invalid && submitted }" placeholder="Website">
+                </div>
+                <div class="wrap-input wrap-input-zoom">
+                    <input type="text" formControlName="zoom" class="form-control" [ngClass]="{ 'invalid' : zoom.invalid && submitted }" placeholder="Zoom link">
+                </div>
+                <div class="wrap-input wrap-input-down">
+                    <select class="form-control" [ngClass]="{ 'invalid' : buyer_agent.invalid && submitted }" formControlName="buyer_agent">
+                        <option [ngValue]="null" [selected]="true" [disabled]="true">Choose type</option>
+                        <option *ngFor="let agent of buyerAgents" [ngValue]="agent">
+                            {{ agent.name }}
+                        </option>
+                    </select>
+                </div>
+                <ng-multiselect-dropdown
+                        #dropdownAreas
+                        [placeholder]="'Area of Real Estate'"
+                        [data]="areas"
+                        [(ngModel)]="selectedAreas"
+                        [settings]="areasSettings"
+                        [ngModelOptions]="{standalone: true}"
+                        (onSelectAll)="dropdownAreas.closeDropdown()"
+                >
+                </ng-multiselect-dropdown>
+                <ng-multiselect-dropdown
+                        #dropdownLanguages
+                        [placeholder]="'What languages are you fluent in?'"
+                        [data]="languagesList"
+                        [(ngModel)]="selectedLanguages"
+                        [settings]="languagesListSettings"
+                        [ngModelOptions]="{standalone: true}"
+                        (onSelectAll)="dropdownLanguages.closeDropdown()"
+                >
+                </ng-multiselect-dropdown>
+                <div class="wrap-input wrap-input-experience">
+                    <input type="text" formControlName="experience" class="form-control" [ngClass]="{ 'invalid' : experience.invalid && submitted }" placeholder="Experience (years)">
+                </div>
+                <textarea class="form-control" [ngClass]="{ 'invalid' : aboutcompany.invalid && submitted }" placeholder="About&hellip;" formControlName="aboutcompany"></textarea>
+
+                <div class="form-error" [innerHtml]="formError"></div>
+
+                <button type="submit" class="btn btn-primary btn-arrow" [disabled]="loading">
+                    <span class="spinner-border spinner-border-sm" *ngIf="loading"></span>
+                    {{loading ? 'Loading...' : 'Register'}}
+                </button>
+
+                <p><a href="#" (click)="toLogin.emit();false">Existing User?</a></p>
+            </form>
+        </div>
+    </article>
+</div>
