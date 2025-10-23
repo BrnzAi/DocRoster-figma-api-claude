@@ -1,0 +1,144 @@
+<div class="search-container">
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-logo">DocRoster</h1>
+      <div class="header-actions">
+        <button class="profile-btn" *ngIf="currentUser()">
+          <img [src]="currentUser()?.avatar" alt="Profile" class="avatar-small" />
+          <span>{{ currentUser()?.name }}</span>
+        </button>
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Search Bar -->
+      <div class="search-section">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search specialists..."
+            [value]="searchQuery()"
+            (input)="searchQuery.set($any($event.target).value)"
+            (keyup.enter)="onSearch()"
+            class="search-input"
+          />
+          <button class="search-btn" (click)="onSearch()">
+            🔍
+          </button>
+        </div>
+        <button class="filter-btn" (click)="toggleFilters()">
+          🎛️ Filters {{ selectedSpecialties().length > 0 ? '(' + selectedSpecialties().length + ')' : '' }}
+        </button>
+      </div>
+
+      <!-- Filters Panel -->
+      <div class="filters-panel" *ngIf="showFilters()">
+        <div class="filters-header">
+          <h3>Filter by Specialty</h3>
+          <button class="clear-btn" (click)="clearFilters()" *ngIf="selectedSpecialties().length > 0">
+            Clear All
+          </button>
+        </div>
+        <div class="specialty-filters">
+          <label *ngFor="let specialty of specialties" class="filter-item">
+            <input
+              type="checkbox"
+              [checked]="selectedSpecialties().includes(specialty.id)"
+              (change)="onSpecialtyChange(specialty.id, $event)"
+            />
+            <span class="specialty-badge" [style.background]="specialty.color">
+              {{ specialty.name }}
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Results List -->
+      <div class="results-section">
+        <div class="results-header">
+          <h3>{{ specialists().length }} Specialists Found</h3>
+        </div>
+        <div class="results-list">
+          <div
+            *ngFor="let specialist of specialists()"
+            class="specialist-card"
+            [class.selected]="selectedSpecialist()?.id === specialist.id"
+            (click)="selectSpecialist(specialist)"
+          >
+            <img [src]="specialist.avatar" [alt]="specialist.name" class="specialist-avatar" />
+            <div class="specialist-info">
+              <h4>{{ specialist.name }}</h4>
+              <div class="specialty-badge" [style.background]="specialist.specialty.color">
+                {{ specialist.specialty.name }}
+              </div>
+              <div class="rating">
+                <span class="stars">
+                  <span *ngFor="let star of getStarArray(specialist.rating)">
+                    {{ star ? '★' : '☆' }}
+                  </span>
+                </span>
+                <span class="rating-value">{{ specialist.rating }}</span>
+              </div>
+              <p class="location">📍 {{ specialist.location.city }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Map Container -->
+    <div class="map-container">
+      <google-map
+        [options]="mapOptions"
+        [width]="'100%'"
+        [height]="'100%'"
+        (boundsChanged)="onBoundsChanged()"
+      >
+        <map-marker
+          *ngFor="let marker of markerPositions()"
+          [position]="marker.position"
+          [options]="marker.options"
+          (mapClick)="onMarkerClick(marker.specialist)"
+        />
+      </google-map>
+    </div>
+  </div>
+
+  <!-- Specialist Detail Modal -->
+  <div class="specialist-modal" *ngIf="selectedSpecialist()" (click)="closeDetails()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeDetails()">✕</button>
+      <div class="modal-body">
+        <img
+          [src]="selectedSpecialist()!.avatar"
+          [alt]="selectedSpecialist()!.name"
+          class="modal-avatar"
+        />
+        <h2>{{ selectedSpecialist()!.name }}</h2>
+        <div class="specialty-badge" [style.background]="selectedSpecialist()!.specialty.color">
+          {{ selectedSpecialist()!.specialty.name }}
+        </div>
+        <div class="rating">
+          <span class="stars">⭐</span>
+          <span class="rating-value">{{ selectedSpecialist()!.rating }}</span>
+          <span class="reviews">({{ selectedSpecialist()!.reviewCount }} reviews)</span>
+        </div>
+        <p class="description">{{ selectedSpecialist()!.description }}</p>
+        <div class="contact-info">
+          <p>📞 {{ selectedSpecialist()!.phone }}</p>
+          <p>📍 {{ selectedSpecialist()!.address }}</p>
+          <p>🗣️ {{ selectedSpecialist()!.languages.join(', ') }}</p>
+        </div>
+        <button class="view-details-btn" (click)="viewDetails(selectedSpecialist()!)">
+          View Full Profile
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

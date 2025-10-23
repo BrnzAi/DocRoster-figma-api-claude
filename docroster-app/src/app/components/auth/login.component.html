@@ -1,0 +1,80 @@
+<!-- Full-page Google Maps background -->
+<div class="map-background">
+  <google-map
+    [options]="mapOptions"
+    width="100%"
+    height="100%"
+  ></google-map>
+</div>
+
+<!-- Login card overlay -->
+<div class="login-overlay">
+  <div class="login-card">
+    <div class="login-header">
+      <div class="logo">
+        <h1>DocRoster</h1>
+      </div>
+      <p class="tagline">Find Healthcare Specialists Near You</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          placeholder="Enter your email"
+          [class.invalid]="email?.invalid && (email?.dirty || email?.touched)"
+        />
+        <div class="error-message" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+          <span *ngIf="email?.errors?.['required']">Email is required</span>
+          <span *ngIf="email?.errors?.['email']">Please enter a valid email</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          placeholder="Enter your password (6+ characters)"
+          [class.invalid]="password?.invalid && (password?.dirty || password?.touched)"
+        />
+        <div class="error-message" *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+          <span *ngIf="password?.errors?.['required']">Password is required</span>
+          <span *ngIf="password?.errors?.['minlength']">Password must be at least 6 characters</span>
+        </div>
+      </div>
+
+      <div class="error-message global-error" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="loading">
+        <span *ngIf="!loading">Sign In</span>
+        <span *ngIf="loading">Signing in...</span>
+      </button>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <div class="demo-section">
+        <div class="demo-buttons">
+          <button type="button" class="btn btn-demo" (click)="loginAsUser()" [disabled]="loading">
+            Demo User
+          </button>
+          <button type="button" class="btn btn-demo" (click)="loginAsSpecialist()" [disabled]="loading">
+            Demo Specialist
+          </button>
+        </div>
+      </div>
+
+      <div class="info-text">
+        <p>💡 Any valid email and password (6+ characters) will work</p>
+      </div>
+    </form>
+  </div>
+</div>
