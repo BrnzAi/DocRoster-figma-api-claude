@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 
 @Component({
@@ -7,11 +7,13 @@ import { GoogleMapsModule } from '@angular/google-maps';
   imports: [GoogleMapsModule],
   template: `
     <div class="map-background">
-      <google-map
-        [options]="mapOptions"
-        width="100%"
-        height="100%"
-      ></google-map>
+      @if (isGoogleMapsLoaded) {
+        <google-map
+          [options]="mapOptions"
+          width="100%"
+          height="100%"
+        ></google-map>
+      }
     </div>
   `,
   styles: [`
@@ -25,7 +27,9 @@ import { GoogleMapsModule } from '@angular/google-maps';
     }
   `]
 })
-export class MapBackgroundComponent {
+export class MapBackgroundComponent implements OnInit {
+  isGoogleMapsLoaded = false;
+  
   mapOptions: google.maps.MapOptions = {
     center: { lat: 40.7128, lng: -74.0060 },
     zoom: 12,
@@ -38,4 +42,32 @@ export class MapBackgroundComponent {
       }
     ]
   };
+
+  ngOnInit() {
+    // Wait for Google Maps to be available
+    this.checkGoogleMapsLoaded();
+  }
+
+  private checkGoogleMapsLoaded() {
+    if (typeof google !== 'undefined' && google.maps) {
+      this.isGoogleMapsLoaded = true;
+      return;
+    }
+
+    // Check every 100ms until Google Maps is loaded
+    const checkInterval = setInterval(() => {
+      if (typeof google !== 'undefined' && google.maps) {
+        this.isGoogleMapsLoaded = true;
+        clearInterval(checkInterval);
+      }
+    }, 100);
+
+    // Timeout after 10 seconds
+    setTimeout(() => {
+      clearInterval(checkInterval);
+      if (!this.isGoogleMapsLoaded) {
+        console.error('Google Maps failed to load');
+      }
+    }, 10000);
+  }
 }
