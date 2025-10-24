@@ -1,2 +1,11 @@
-/figma-tools/*
-/demo-map/*docroster-app/IMPLEMENTATION_GUIDE.md
+/demo-map/*
+
+# Environment files with sensitive data
+.env
+figma-tools/.env
+
+# Node modules
+figma-tools/node_modules/
+
+# docs folder is for GitHub Pages deployment - DO NOT IGNORE
+# /docs/docroster-app/IMPLEMENTATION_GUIDE.md
