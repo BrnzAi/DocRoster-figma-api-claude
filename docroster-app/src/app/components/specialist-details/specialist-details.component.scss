@@ -1,7 +1,7 @@
 // Specialist Details Page - matching Figma design
 
 .specialist-page {
-  width: 100%;
+  width: 393px;
   min-height: 100vh;
   background: #F8F9FA;
   position: relative;
@@ -65,6 +65,8 @@
   left: 0;
   right: 0;
   padding: 0 24px 24px;
+    // white transparent gradient
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
 }
 
 // Specialist Header (Name + Gender Icon)
@@ -73,10 +75,11 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
+  color: #0A1748;
 }
 
 .specialist-name {
-  color: #FFFFFF;
+  color: #0A1748;
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -93,13 +96,13 @@
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   
   path {
-    fill: #FFFFFF;
+    fill: #0A1748;
   }
 }
 
 // Description text over image (white text)
 .content-overlay .description {
-  color: #FFFFFF;
+  color: #0A1748;
   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 14px;
   line-height: 160%;
@@ -111,23 +114,17 @@
 .bottom-content {
   display: flex;
   justify-content: center;
-  padding: 24px;
 }
 
-// Single content card - 393px width
 .content-card {
-  width: 393px;
-  background: #FFFFFF;
-  border-radius: 24px;
-  padding: 24px;
-  box-shadow: 0 2px 8px rgba(10, 23, 72, 0.08);
+    width: 100%;
 }
 
 // Action buttons - same row, stretched
 .action-buttons {
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
+  padding: 24px;
 
   button {
     flex: 1;
@@ -187,6 +184,8 @@
 
 // Specializations Section
 .specializations {
+    padding: 0 24px;
+
   h2 {
     color: #0A1748;
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
