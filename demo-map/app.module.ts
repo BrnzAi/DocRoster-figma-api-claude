@@ -72,7 +72,7 @@ export function initConfig(appConfig: ConfigService) {
         NgbModule,
         StripeCheckoutModule,
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyDP6Ces1p8-GIfHQqeu6fQalR4cfDHKjMo',
+            apiKey: 'GOOGLE_MAPS_API_KEY_PLACEHOLDER', // Replace with your own key
             libraries: ['places']
         }),
         !environment.production ? StoreDevtoolsModule.instrument() : [],

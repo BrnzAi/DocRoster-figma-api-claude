@@ -8,7 +8,7 @@
     "build:prod": "ng build --configuration production --base-href /DocRoster-figma-api-claude/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npm run build:prod && cp ../docs/browser/index.html ../docs/browser/404.html && touch ../docs/.nojekyll"
+    "deploy": "npm run build:prod && cp -r ../docs/browser/* ../docs/ && rm -rf ../docs/browser && touch ../docs/.nojekyll"
   },
   "private": true,
   "dependencies": {

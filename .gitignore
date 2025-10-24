@@ -3,6 +3,11 @@
 # Environment files with sensitive data
 .env
 figma-tools/.env
+docroster-app/src/environments/environment.ts
+docroster-app/src/environments/environment.prod.ts
+
+# Keep example files
+!docroster-app/src/environments/environment.example.ts
 
 # Node modules
 figma-tools/node_modules/
