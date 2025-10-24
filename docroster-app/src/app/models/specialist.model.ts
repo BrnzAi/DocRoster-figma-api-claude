@@ -33,6 +33,7 @@ export interface Location {
   city: string;
   state: string;
   zipCode: string;
+  distance?: string; // e.g. "2.5 km away"
 }
 
 export interface Availability {

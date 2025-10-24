@@ -169,13 +169,10 @@ export class SearchComponent implements OnInit {
   }
 
   /**
-   * Handle specialist selection from list
-```
+   * Handle specialist hover from list - center map only
    */
-  selectSpecialist(specialist: Specialist): void {
-    this.specialistsService.selectSpecialist(specialist);
-    
-    // Center map on selected specialist
+  onSpecialistHover(specialist: Specialist): void {
+    // Center map on hovered specialist
     if (this.map) {
       this.map.panTo({ lat: specialist.location.lat, lng: specialist.location.lng });
       this.map.zoom = 15;
@@ -183,10 +180,17 @@ export class SearchComponent implements OnInit {
   }
 
   /**
-   * Handle marker click
+   * Handle specialist selection from list - navigate to details
+   */
+  selectSpecialist(specialist: Specialist): void {
+    this.router.navigate(['/specialist', specialist.id]);
+  }
+
+  /**
+   * Handle marker click - navigate to details
    */
   onMarkerClick(specialist: Specialist): void {
-    this.specialistsService.selectSpecialist(specialist);
+    this.router.navigate(['/specialist', specialist.id]);
   }
 
   /**

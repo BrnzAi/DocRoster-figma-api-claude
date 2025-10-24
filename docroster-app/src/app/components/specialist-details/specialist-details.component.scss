@@ -1,0 +1,367 @@
+// Specialist Details Page - 393x808px (Figma ID: 1801:1769)
+
+.specialist-page {
+  position: relative;
+  width: 393px;
+  min-height: 808px;
+  margin: 0 auto;
+  background: #FFF;
+  overflow-x: hidden;
+}
+
+// Top Story Section (465x420 at x:-36, y:0)
+.top-story {
+  position: relative;
+  width: 465px;
+  height: 420px;
+  margin-left: -36px; // Extends beyond page width
+  overflow: hidden;
+
+  .specialist-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    // Gradient overlay
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+      pointer-events: none;
+    }
+  }
+
+  // Content Overlay (Frame 1000002833 at x:36, y:300, 393x464)
+  .content-overlay {
+    position: absolute;
+    left: 36px;
+    bottom: 0;
+    width: 393px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+  }
+}
+
+// Specialist Header (Name + Gender Icon)
+.specialist-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .specialist-name {
+    color: #0A1748;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+
+  // Gender icon (32x32 at x:259, y:328)
+  .gender-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+}
+
+// Specialty Tag
+.specialty-tag {
+  display: inline-flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  color: #FFF;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  align-self: flex-start;
+}
+
+// Rating Section
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .stars {
+    display: flex;
+    gap: 2px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+
+      &.filled path {
+        fill: #FFB800;
+      }
+    }
+  }
+
+  .rating-value {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  .review-count {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.6;
+  }
+}
+
+// Close Button (36x36 at x:333, y:24)
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 750px;
+  background: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 48px rgba(10, 23, 72, 0.24);
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.64);
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: 12.44px;
+    height: 12.44px;
+  }
+}
+
+// Bottom Content (Frame 1000002924 at y:764)
+.bottom-content {
+  margin-top: -120px; // Overlap with image gradient
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+// Section Base Styles
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(10, 23, 72, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    color: #0A1748;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+// About Section (Frame 1000002879 h:289)
+.about-section {
+  .description {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+    opacity: 0.8;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .label {
+      color: #0A1748;
+      font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      opacity: 0.6;
+      text-transform: uppercase;
+    }
+
+    .value {
+      color: #0A1748;
+      font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%;
+    }
+  }
+}
+
+// Location Section (Frame 1000002896 h:323)
+.location-section {
+  .address {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0;
+  }
+
+  .distance {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.6;
+  }
+}
+
+// Actions Section (Frame 1000002889 h:274)
+.actions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: none;
+
+  button {
+    display: flex;
+    height: 48px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .btn-primary {
+    background: rgba(10, 23, 72, 0.80);
+    color: #FFF;
+
+    &:hover {
+      background: rgba(10, 23, 72, 0.90);
+      transform: translateY(-1px);
+    }
+  }
+
+  .btn-secondary {
+    background: #FFF;
+    color: #0A1748;
+    border: 1px solid rgba(10, 23, 72, 0.12);
+
+    &:hover {
+      background: rgba(10, 23, 72, 0.04);
+    }
+  }
+}
+
+// Loading State
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 808px;
+  gap: 16px;
+
+  .spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(10, 23, 72, 0.12);
+    border-top-color: rgba(10, 23, 72, 0.80);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  p {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.6;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 450px) {
+  .specialist-page {
+    width: 100%;
+  }
+
+  .top-story {
+    width: calc(100% + 72px);
+  }
+}

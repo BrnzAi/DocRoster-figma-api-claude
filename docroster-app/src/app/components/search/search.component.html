@@ -11,7 +11,7 @@
         *ngFor="let marker of markerPositions()"
         [position]="marker.position"
         [options]="marker.options"
-        (mapClick)="selectSpecialist(marker.specialist)"
+        (mapClick)="onMarkerClick(marker.specialist)"
       />
     </google-map>
   </div>
@@ -79,6 +79,7 @@
             <div
               class="result-item"
               [class.selected]="selectedSpecialist()?.id === specialist.id"
+              (mouseenter)="onSpecialistHover(specialist)"
               (click)="selectSpecialist(specialist)"
             >
               <!-- Avatar with Number Badge -->
