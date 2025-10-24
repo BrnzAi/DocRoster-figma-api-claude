@@ -3,8 +3,8 @@
 ## What Was Fixed
 
 1. **Removed exposed Google Maps API keys** from:
-   - `docroster-app/src/index.html` (AIzaSyCD8jcJuPEbDCeE77zbBzhWCY6djGOBq9U)
-   - `demo-map/app.module.ts` (AIzaSyDP6Ces1p8-GIfHQqeu6fQalR4cfDHKjMo)
+   - `docroster-app/src/index.html` (key removed)
+   - `demo-map/app.module.ts` (key removed)
 
 2. **Fixed GitHub Pages 404 error**:
    - Moved files from `docs/browser/` to `docs/` root
@@ -60,9 +60,9 @@ If you don't have one:
 
 The old API keys were exposed in git history. You should:
 
-1. **Revoke old keys** in Google Cloud Console:
-   - `AIzaSyCD8jcJuPEbDCeE77zbBzhWCY6djGOBq9U`
-   - `AIzaSyDP6Ces1p8-GIfHQqeu6fQalR4cfDHKjMo`
+1. **Revoke old keys** in Google Cloud Console
+   - Check your GitHub secret scanning alerts for the exposed key IDs
+   - Revoke any keys that were committed to the repository
 
 2. **Generate new API keys** and use them in your environment files
 
