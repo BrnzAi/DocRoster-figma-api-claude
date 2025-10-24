@@ -1,0 +1,1969 @@
+{
+  "images": [
+    {
+      "name": "Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 13",
+      "path": " > Document > website > map > Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 13",
+      "imageRef": "3e81c159c9830c6d970530e12a41a2610cb74a7e",
+      "bounds": {
+        "x": 1338,
+        "y": -731,
+        "width": 1280,
+        "height": 832
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > hospital > Ellipse 3",
+      "imageRef": "df6b5397e7ab1780d14db30258dd2baa30d2af05",
+      "bounds": {
+        "x": 1552,
+        "y": -240,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > ime > Ellipse 3",
+      "imageRef": "3f38aa4793c1eff582dbdfa2528cb7251bfbdd4d",
+      "bounds": {
+        "x": 1922,
+        "y": -104,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > law > Ellipse 3",
+      "imageRef": "fedd329e7b5563945f803b73bb03d9410c9cacee",
+      "bounds": {
+        "x": 2171,
+        "y": -339,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > law > Ellipse 3",
+      "imageRef": "fedd329e7b5563945f803b73bb03d9410c9cacee",
+      "bounds": {
+        "x": 1655,
+        "y": -358,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > law > Ellipse 3",
+      "imageRef": "cf8cd71b68b7f936907b09e38290d5d620961f55",
+      "bounds": {
+        "x": 1720,
+        "y": -113,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > clinic > Ellipse 3",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 1826,
+        "y": -49,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > clinic > Ellipse 3",
+      "imageRef": "28a829fda40de3b93e3fee92f376e6ea8aaa8da5",
+      "bounds": {
+        "x": 1858,
+        "y": -595,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > hospital > Ellipse 3",
+      "imageRef": "908823fc8b6fc542988a6a0a094b2ee448f6e8e9",
+      "bounds": {
+        "x": 1775,
+        "y": -270,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > hospital > Ellipse 3",
+      "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+      "bounds": {
+        "x": 2292,
+        "y": -422,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > hospital > Ellipse 3",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 1935,
+        "y": -208,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > hospital > Ellipse 3",
+      "imageRef": "37734544db64c3941e1cd8bcc2a84bd98671f0cb",
+      "bounds": {
+        "x": 1923,
+        "y": -677,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > insurance > Ellipse 3",
+      "imageRef": "e939ce2a9e6720cf5f8cfaeff7a072cd75c95e61",
+      "bounds": {
+        "x": 1894,
+        "y": -411,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > insurance > Ellipse 3",
+      "imageRef": "0bcbd365c64d430c7acd6e25b6e92e8511170bef",
+      "bounds": {
+        "x": 1716,
+        "y": -7,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > insurance > Ellipse 3",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 1605,
+        "y": -37,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > law > Ellipse 3",
+      "imageRef": "c8f9524a9db35d8df58ad64c61a3b238c7fb69b8",
+      "bounds": {
+        "x": 1416,
+        "y": -416,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > law > Ellipse 3",
+      "imageRef": "37cdd8bbd4978e613ce3575f91f43862370d5ef0",
+      "bounds": {
+        "x": 2121,
+        "y": -458,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > ime > Ellipse 3",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 2059,
+        "y": -214,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > ime > Ellipse 3",
+      "imageRef": "73c762acce28b6ba6f3d83e02f30f14c8f775f06",
+      "bounds": {
+        "x": 1387,
+        "y": -124,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > ime > Ellipse 3",
+      "imageRef": "3c8cdb975ae89a6f5a9c3c6eae6b07d0c9d9ccc5",
+      "bounds": {
+        "x": 1959,
+        "y": -579,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 4",
+      "path": " > Document > website > map > clinic > Ellipse 4",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 2194,
+        "y": -437,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "name": "Ellipse 4",
+      "path": " > Document > website > map > clinic > Ellipse 4",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 2194,
+        "y": -437,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > map > clinic > Ellipse 3",
+      "imageRef": "47653c7dfe45da5f882762629f03847e4b8930dc",
+      "bounds": {
+        "x": 1470,
+        "y": 2,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > map > Frame 8 > image 1",
+      "imageRef": "5343d7508c6a0c75f35f96f0f92d607866a053dd",
+      "bounds": {
+        "x": 2483,
+        "y": -709.25,
+        "width": 105,
+        "height": 24
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > map > Frame 8 > image 1",
+      "imageRef": "3f7249618d4bd2a15d007cc019dd5f8297c5b2be",
+      "bounds": {
+        "x": 2483,
+        "y": -709.25,
+        "width": 105,
+        "height": 24
+      }
+    },
+    {
+      "name": "Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 12",
+      "path": " > Document > website > login > Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 12",
+      "imageRef": "3e81c159c9830c6d970530e12a41a2610cb74a7e",
+      "bounds": {
+        "x": 8,
+        "y": -731,
+        "width": 1280,
+        "height": 832
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > hospital > Ellipse 3",
+      "imageRef": "df6b5397e7ab1780d14db30258dd2baa30d2af05",
+      "bounds": {
+        "x": 222,
+        "y": -240,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > ime > Ellipse 3",
+      "imageRef": "3f38aa4793c1eff582dbdfa2528cb7251bfbdd4d",
+      "bounds": {
+        "x": 592,
+        "y": -104,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > law > Ellipse 3",
+      "imageRef": "fedd329e7b5563945f803b73bb03d9410c9cacee",
+      "bounds": {
+        "x": 841,
+        "y": -339,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > law > Ellipse 3",
+      "imageRef": "fedd329e7b5563945f803b73bb03d9410c9cacee",
+      "bounds": {
+        "x": 325,
+        "y": -358,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > law > Ellipse 3",
+      "imageRef": "cf8cd71b68b7f936907b09e38290d5d620961f55",
+      "bounds": {
+        "x": 390,
+        "y": -113,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > clinic > Ellipse 3",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 496,
+        "y": -49,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > clinic > Ellipse 3",
+      "imageRef": "28a829fda40de3b93e3fee92f376e6ea8aaa8da5",
+      "bounds": {
+        "x": 528,
+        "y": -595,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > hospital > Ellipse 3",
+      "imageRef": "908823fc8b6fc542988a6a0a094b2ee448f6e8e9",
+      "bounds": {
+        "x": 445,
+        "y": -270,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > hospital > Ellipse 3",
+      "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+      "bounds": {
+        "x": 962,
+        "y": -422,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > hospital > Ellipse 3",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 605,
+        "y": -208,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > hospital > Ellipse 3",
+      "imageRef": "37734544db64c3941e1cd8bcc2a84bd98671f0cb",
+      "bounds": {
+        "x": 593,
+        "y": -677,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > insurance > Ellipse 3",
+      "imageRef": "e939ce2a9e6720cf5f8cfaeff7a072cd75c95e61",
+      "bounds": {
+        "x": 564,
+        "y": -411,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > insurance > Ellipse 3",
+      "imageRef": "0bcbd365c64d430c7acd6e25b6e92e8511170bef",
+      "bounds": {
+        "x": 386,
+        "y": -7,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > insurance > Ellipse 3",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 275,
+        "y": -37,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > law > Ellipse 3",
+      "imageRef": "c8f9524a9db35d8df58ad64c61a3b238c7fb69b8",
+      "bounds": {
+        "x": 86,
+        "y": -416,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > law > Ellipse 3",
+      "imageRef": "37cdd8bbd4978e613ce3575f91f43862370d5ef0",
+      "bounds": {
+        "x": 791,
+        "y": -458,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > ime > Ellipse 3",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 729,
+        "y": -214,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > ime > Ellipse 3",
+      "imageRef": "73c762acce28b6ba6f3d83e02f30f14c8f775f06",
+      "bounds": {
+        "x": 57,
+        "y": -124,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > ime > Ellipse 3",
+      "imageRef": "3c8cdb975ae89a6f5a9c3c6eae6b07d0c9d9ccc5",
+      "bounds": {
+        "x": 629,
+        "y": -579,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 4",
+      "path": " > Document > website > login > clinic > Ellipse 4",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 859,
+        "y": -420,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website > login > clinic > Ellipse 3",
+      "imageRef": "47653c7dfe45da5f882762629f03847e4b8930dc",
+      "bounds": {
+        "x": 140,
+        "y": 2,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > login > Frame 8 > image 1",
+      "imageRef": "5343d7508c6a0c75f35f96f0f92d607866a053dd",
+      "bounds": {
+        "x": 1153,
+        "y": -709.25,
+        "width": 105,
+        "height": 24
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > login > Frame 8 > image 1",
+      "imageRef": "3f7249618d4bd2a15d007cc019dd5f8297c5b2be",
+      "bounds": {
+        "x": 1153,
+        "y": -709.25,
+        "width": 105,
+        "height": 24
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002863 > Group 144 > Ellipse 5",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 4828,
+        "y": -348,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+      "bounds": {
+        "x": 4828,
+        "y": -227.5,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 4828,
+        "y": -107,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 4828,
+        "y": 21,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002867 > Group 144 > Ellipse 5",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 4828,
+        "y": 149,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002868 > Group 144 > Ellipse 5",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 4828,
+        "y": 277,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002869 > Group 144 > Ellipse 5",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 4828,
+        "y": 405,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002870 > Group 144 > Ellipse 5",
+      "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+      "bounds": {
+        "x": 4828,
+        "y": 525.5,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002871 > Group 144 > Ellipse 5",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 4828,
+        "y": 646,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002872 > Group 144 > Ellipse 5",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 4828,
+        "y": 774,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002873 > Group 144 > Ellipse 5",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 4828,
+        "y": 902,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > search > Frame 1000002924 > Frame 1000002874 > Group 144 > Ellipse 5",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 4828,
+        "y": 1030,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > specialist > top story > image",
+      "imageRef": "9efd17668617d25da377c7556fd4a6cf0d30ff87",
+      "bounds": {
+        "x": 3439,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > specialist > top story > image",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 3439,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > profile > top story > image",
+      "imageRef": "a6a614b0bf606ecd5f8475847fa9cb621db06099",
+      "bounds": {
+        "x": 4325,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > profile > top story > image",
+      "imageRef": "c9b851b0ed506dc0193e3c103ea3d82824ee40c2",
+      "bounds": {
+        "x": 4325,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > profile > top story > image",
+      "imageRef": "a50069ac21a8cf4d9fd9203ee7dfd517abfaba96",
+      "bounds": {
+        "x": 4325,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website > profile > top story > image",
+      "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+      "bounds": {
+        "x": 4325,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "417631f4fda0fe82b5584880b9c90ab70c0a4921",
+      "bounds": {
+        "x": 4385,
+        "y": -33,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "b4d48ef24c37c0b4905798d594f59b5cfeb60caa",
+      "bounds": {
+        "x": 4385,
+        "y": 39,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002869 > Group 144 > Ellipse 5",
+      "imageRef": "a133f22f84b4236c1265c9d3513bde890ff1f9b6",
+      "bounds": {
+        "x": 4385,
+        "y": 111,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Rectangle 14",
+      "path": " > Document > website > reg > Group 38 > Rectangle 14",
+      "imageRef": "f896ce27f9d5736d0784321526ccc2d35c813b24",
+      "bounds": {
+        "x": 5366,
+        "y": -718,
+        "width": 150,
+        "height": 150
+      }
+    },
+    {
+      "name": "Rectangle 14",
+      "path": " > Document > website > reg > Group 38 > Rectangle 14",
+      "imageRef": "01607cd9fe82c40bc21bec2661fdd176768a408a",
+      "bounds": {
+        "x": 5366,
+        "y": -718,
+        "width": 150,
+        "height": 150
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > auth > image 4",
+      "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+      "bounds": {
+        "x": 5758,
+        "y": -718,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > auth > image 4",
+      "imageRef": "34338d4282aea2a068f2d8b85d955906d9ec5a58",
+      "bounds": {
+        "x": 5758,
+        "y": -718,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > recover > image 4",
+      "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+      "bounds": {
+        "x": 5758,
+        "y": -83,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > recover > image 4",
+      "imageRef": "34338d4282aea2a068f2d8b85d955906d9ec5a58",
+      "bounds": {
+        "x": 5758,
+        "y": -83,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "Screenshot 2025-08-26 at 17.22.53 1",
+      "path": " > Document > website > Screenshot 2025-08-26 at 17.22.53 1",
+      "imageRef": "8d7321af894511fe157997e1b17a18e1136e5057",
+      "bounds": {
+        "x": 4741,
+        "y": -2267,
+        "width": 396,
+        "height": 191
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002863 > Group 144 > Ellipse 5",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 6600,
+        "y": -458,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+      "bounds": {
+        "x": 6600,
+        "y": -354,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 6600,
+        "y": -250,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 6600,
+        "y": -146,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002867 > Group 144 > Ellipse 5",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 6600,
+        "y": -42,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002868 > Group 144 > Ellipse 5",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 6600,
+        "y": 62,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002869 > Group 144 > Ellipse 5",
+      "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+      "bounds": {
+        "x": 6600,
+        "y": 166,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002875 > Group 144 > Ellipse 5",
+      "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+      "bounds": {
+        "x": 6600,
+        "y": 270,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002872 > Group 144 > Ellipse 5",
+      "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+      "bounds": {
+        "x": 6600,
+        "y": 374,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002873 > Group 144 > Ellipse 5",
+      "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+      "bounds": {
+        "x": 6600,
+        "y": 478,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website > review > Frame 1000002924 > Frame 1000002874 > Group 144 > Ellipse 5",
+      "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+      "bounds": {
+        "x": 6600,
+        "y": 582,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Screenshot 2025-09-02 at 15.05.31 1",
+      "path": " > Document > website > Screenshot 2025-09-02 at 15.05.31 1",
+      "imageRef": "575cfcd8ad8599d3e6b7c9332e18f719c3e0c220",
+      "bounds": {
+        "x": 4617,
+        "y": -1992,
+        "width": 413,
+        "height": 311
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > image 1",
+      "imageRef": "5343d7508c6a0c75f35f96f0f92d607866a053dd",
+      "bounds": {
+        "x": 4119,
+        "y": -1917,
+        "width": 350,
+        "height": 80
+      }
+    },
+    {
+      "name": "image 1",
+      "path": " > Document > website > image 1",
+      "imageRef": "3f7249618d4bd2a15d007cc019dd5f8297c5b2be",
+      "bounds": {
+        "x": 4119,
+        "y": -1917,
+        "width": 350,
+        "height": 80
+      }
+    },
+    {
+      "name": "image 5",
+      "path": " > Document > website > image 5",
+      "imageRef": "3f7249618d4bd2a15d007cc019dd5f8297c5b2be",
+      "bounds": {
+        "x": 4119,
+        "y": -1784,
+        "width": 88,
+        "height": 88
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > image 4",
+      "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+      "bounds": {
+        "x": 3812,
+        "y": -1957,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > image 4",
+      "imageRef": "34338d4282aea2a068f2d8b85d955906d9ec5a58",
+      "bounds": {
+        "x": 3812,
+        "y": -1957,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 11",
+      "path": " > Document > website > Group 4 > Frame 18 > image 11",
+      "imageRef": "84aed5ee2f2b9133a30e257cb121bfa6c81ad43f",
+      "bounds": {
+        "x": 414,
+        "y": -3545,
+        "width": 553,
+        "height": 1810
+      }
+    },
+    {
+      "name": "image 13",
+      "path": " > Document > website > Group 4 > Frame 22 > image 13",
+      "imageRef": "79403747927693f18903156a6bd4d4df43a2345a",
+      "bounds": {
+        "x": 941,
+        "y": -2736,
+        "width": 553,
+        "height": 968
+      }
+    },
+    {
+      "name": "image 16",
+      "path": " > Document > website > Group 5 > Frame 18 > image 16",
+      "imageRef": "ceaf2513d194be33d888ab4a4ae22d2db5d80a4f",
+      "bounds": {
+        "x": -920,
+        "y": -2738,
+        "width": 1164,
+        "height": 756
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > Group 5 > auth > image 4",
+      "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+      "bounds": {
+        "x": -408,
+        "y": -2608,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 4",
+      "path": " > Document > website > Group 5 > auth > image 4",
+      "imageRef": "34338d4282aea2a068f2d8b85d955906d9ec5a58",
+      "bounds": {
+        "x": -408,
+        "y": -2608,
+        "width": 258,
+        "height": 160
+      }
+    },
+    {
+      "name": "image 15",
+      "path": " > Document > website > Frame 11 > image 15",
+      "imageRef": "963e4395a2584a90fba93a088cb09e75ce6703a6",
+      "bounds": {
+        "x": 639,
+        "y": -4170,
+        "width": 639,
+        "height": 1853
+      }
+    },
+    {
+      "name": "image 15",
+      "path": " > Document > website > Frame 12 > image 15",
+      "imageRef": "963e4395a2584a90fba93a088cb09e75ce6703a6",
+      "bounds": {
+        "x": 62,
+        "y": -4743,
+        "width": 639,
+        "height": 1853
+      }
+    },
+    {
+      "name": "image 14",
+      "path": " > Document > website > Frame 13 > image 14",
+      "imageRef": "57932d24e60a1d784dc027e5ddcd612f20ac225c",
+      "bounds": {
+        "x": 1231,
+        "y": -4126,
+        "width": 611,
+        "height": 1229
+      }
+    },
+    {
+      "name": "Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 12",
+      "path": " > Document > website 2 > map > Address: Маунт Плезант, Ванкувер, Британская Колумбия, Канада - Zoom: 12",
+      "imageRef": "93ff5ebd95d2f32f44bff183b6395df8175cc6e9",
+      "bounds": {
+        "x": 1253,
+        "y": -1070,
+        "width": 1450,
+        "height": 1530.7216796875
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > hospital > Ellipse 3",
+      "imageRef": "04100a523db681a6d917e0adf9537ecddc6bec65",
+      "bounds": {
+        "x": 1552,
+        "y": -240,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > ime > Ellipse 3",
+      "imageRef": "45da4d29fca16e27bdca31874d3df6fe41884439",
+      "bounds": {
+        "x": 1922,
+        "y": -104,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > law > Ellipse 3",
+      "imageRef": "de0fcd7e29b6df8a1f2979acb1b5825c626a30df",
+      "bounds": {
+        "x": 2171,
+        "y": -339,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > law > Ellipse 3",
+      "imageRef": "abbb17fc1dec9e56ce538f5cf0213f8b6eb32b5d",
+      "bounds": {
+        "x": 1720,
+        "y": -113,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > clinic > Ellipse 3",
+      "imageRef": "f51d368d8de6a73f6890a8e9460c83cfeb536099",
+      "bounds": {
+        "x": 2328,
+        "y": -68,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > clinic > Ellipse 3",
+      "imageRef": "f51d368d8de6a73f6890a8e9460c83cfeb536099",
+      "bounds": {
+        "x": 1858,
+        "y": -595,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > Group 146 > Ellipse 3",
+      "imageRef": "9efd17668617d25da377c7556fd4a6cf0d30ff87",
+      "bounds": {
+        "x": 1606.5,
+        "y": -363,
+        "width": 33,
+        "height": 31.5
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > hospital > Ellipse 3",
+      "imageRef": "6d381cbffbca383642fda333ffb05fa972e8f0e8",
+      "bounds": {
+        "x": 2497,
+        "y": -222,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > hospital > Ellipse 3",
+      "imageRef": "06899a6b0f3a5b13a088ec8bf6953a976d6a9e0d",
+      "bounds": {
+        "x": 2292,
+        "y": -422,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > hospital > Ellipse 3",
+      "imageRef": "5e1f9e032e71591b31d36e66cc7dea6d50dea271",
+      "bounds": {
+        "x": 1935,
+        "y": -208,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > hospital > Ellipse 3",
+      "imageRef": "5e1f9e032e71591b31d36e66cc7dea6d50dea271",
+      "bounds": {
+        "x": 1923,
+        "y": -677,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > insurance > Ellipse 3",
+      "imageRef": "5375106b61064b93a067d40f6283da71c1ed448b",
+      "bounds": {
+        "x": 2490,
+        "y": -175,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > insurance > Ellipse 3",
+      "imageRef": "a5f0cdeddc4805eb148ff2d9f08a215ec824a526",
+      "bounds": {
+        "x": 2550,
+        "y": -513,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > insurance > Ellipse 3",
+      "imageRef": "a5f0cdeddc4805eb148ff2d9f08a215ec824a526",
+      "bounds": {
+        "x": 1605,
+        "y": -37,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > law > Ellipse 3",
+      "imageRef": "59eeb599b63b475d4724f3477690bda7ff42bff2",
+      "bounds": {
+        "x": 2185,
+        "y": -7,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > law > Ellipse 3",
+      "imageRef": "59eeb599b63b475d4724f3477690bda7ff42bff2",
+      "bounds": {
+        "x": 2454,
+        "y": -625,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > ime > Ellipse 3",
+      "imageRef": "59ae31701d94117a909b1e58b260a230df281631",
+      "bounds": {
+        "x": 2059,
+        "y": -214,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > ime > Ellipse 3",
+      "imageRef": "cb10bb77e0baace108355642c4aaf756dca522a5",
+      "bounds": {
+        "x": 1387,
+        "y": -124,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > ime > Ellipse 3",
+      "imageRef": "cb10bb77e0baace108355642c4aaf756dca522a5",
+      "bounds": {
+        "x": 1959,
+        "y": -579,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > clinic > Ellipse 3",
+      "imageRef": "f84ce6c292cef636ee280501d0cd06d027697561",
+      "bounds": {
+        "x": 2189,
+        "y": -420,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "Ellipse 3",
+      "path": " > Document > website 2 > map > clinic > Ellipse 3",
+      "imageRef": "f84ce6c292cef636ee280501d0cd06d027697561",
+      "bounds": {
+        "x": 1470,
+        "y": 2,
+        "width": 22,
+        "height": 21
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website 2 > organization details > top story > image",
+      "imageRef": "9efd17668617d25da377c7556fd4a6cf0d30ff87",
+      "bounds": {
+        "x": 2996,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > org specialists > Frame 1000002923 > Frame 1000002882 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "417631f4fda0fe82b5584880b9c90ab70c0a4921",
+      "bounds": {
+        "x": 3942,
+        "y": -554,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > org specialists > Frame 1000002923 > Frame 1000002882 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "ae7071eed928404413d0a4cb05f2a7a1e680e3e8",
+      "bounds": {
+        "x": 3942,
+        "y": -482,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > org specialists > Frame 1000002923 > Frame 1000002882 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "b4d48ef24c37c0b4905798d594f59b5cfeb60caa",
+      "bounds": {
+        "x": 3942,
+        "y": -410,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > org specialists > Frame 1000002923 > Frame 1000002882 > Frame 1000002869 > Group 144 > Ellipse 5",
+      "imageRef": "a133f22f84b4236c1265c9d3513bde890ff1f9b6",
+      "bounds": {
+        "x": 3942,
+        "y": -338,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "image",
+      "path": " > Document > website 2 > profile > top story > image",
+      "imageRef": "a6a614b0bf606ecd5f8475847fa9cb621db06099",
+      "bounds": {
+        "x": 4818,
+        "y": -762,
+        "width": 465,
+        "height": 420
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "417631f4fda0fe82b5584880b9c90ab70c0a4921",
+      "bounds": {
+        "x": 4878,
+        "y": -83,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "ae7071eed928404413d0a4cb05f2a7a1e680e3e8",
+      "bounds": {
+        "x": 4878,
+        "y": -11,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "b4d48ef24c37c0b4905798d594f59b5cfeb60caa",
+      "bounds": {
+        "x": 4878,
+        "y": 61,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > profile > Frame 1000002923 > Frame 1000002882 > Frame 1000002869 > Group 144 > Ellipse 5",
+      "imageRef": "a133f22f84b4236c1265c9d3513bde890ff1f9b6",
+      "bounds": {
+        "x": 4878,
+        "y": 133,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 6",
+      "path": " > Document > website 2 > profile > Frame 1000002924 > Frame 1000002882 > Frame 1000002864 > Group 144 > Ellipse 6",
+      "imageRef": "f51d368d8de6a73f6890a8e9460c83cfeb536099",
+      "bounds": {
+        "x": 4878,
+        "y": -240.5,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002863 > Group 144 > Ellipse 5",
+      "imageRef": "5375106b61064b93a067d40f6283da71c1ed448b",
+      "bounds": {
+        "x": 5321,
+        "y": -412,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002864 > Group 144 > Ellipse 5",
+      "imageRef": "f51d368d8de6a73f6890a8e9460c83cfeb536099",
+      "bounds": {
+        "x": 5321,
+        "y": -291.5,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "59eeb599b63b475d4724f3477690bda7ff42bff2",
+      "bounds": {
+        "x": 5321,
+        "y": -171,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002865 > Group 144 > Ellipse 5",
+      "imageRef": "9efd17668617d25da377c7556fd4a6cf0d30ff87",
+      "bounds": {
+        "x": 5321,
+        "y": -171,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002866 > Group 144 > Ellipse 5",
+      "imageRef": "5e1f9e032e71591b31d36e66cc7dea6d50dea271",
+      "bounds": {
+        "x": 5321,
+        "y": -43,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002867 > Group 144 > Ellipse 5",
+      "imageRef": "5e1f9e032e71591b31d36e66cc7dea6d50dea271",
+      "bounds": {
+        "x": 5321,
+        "y": 85,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002867 > Group 144 > Ellipse 5",
+      "imageRef": "9efd17668617d25da377c7556fd4a6cf0d30ff87",
+      "bounds": {
+        "x": 5321,
+        "y": 85,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002868 > Group 144 > Ellipse 5",
+      "imageRef": "5e1f9e032e71591b31d36e66cc7dea6d50dea271",
+      "bounds": {
+        "x": 5321,
+        "y": 213,
+        "width": 56,
+        "height": 56
+      }
+    },
+    {
+      "name": "Ellipse 5",
+      "path": " > Document > website 2 > search results > Frame 1000002924 > Frame 1000002868 > Group 144 > Ellipse 5",
+      "imageRef": "cb10bb77e0baace108355642c4aaf756dca522a5",
+      "bounds": {
+        "x": 5321,
+        "y": 213,
+        "width": 56,
+        "height": 56
+      }
+    }
+  ],
+  "loginTexts": [],
+  "specialistDescriptions": [
+    {
+      "path": " > Document > website > specialist > top story > Frame 1000002833 > Frame 24 > Dr. Emily Carter is a licensed Physiatrist practicing at ABC Medical Center in Toronto, Ontario. She is fluent in both English and French and has completed over 500 Independent Medical Examinations (IMEs). Dr. Carter specializes in assessments related to catastrophic impairment (CAT), chronic pain, motor vehicle accidents (MVAs), long-term disability (LTD), return-to-work (RTW), and post-concussion syndromes. Her expertise also includes neurological rehabilitation and functional capacity evaluations. She offers both in-person and virtual assessments and is available to travel within the GTA.",
+      "text": "Dr. Emily Carter is a licensed Physiatrist practicing at ABC Medical Center in Toronto, Ontario. She is fluent in both English and French and has completed over 500 Independent Medical Examinations (IMEs).\nDr. Carter specializes in assessments related to catastrophic impairment (CAT), chronic pain, motor vehicle accidents (MVAs), long-term disability (LTD), return-to-work (RTW), and post-concussion syndromes. Her expertise also includes neurological rehabilitation and functional capacity evaluations. She offers both in-person and virtual assessments and is available to travel within the GTA.",
+      "style": {
+        "fontFamily": "SF UI Display",
+        "fontPostScriptName": "SFUIDisplay-Regular",
+        "fontStyle": "Regular",
+        "fontWeight": 400,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 18,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": -0.5,
+        "lineHeightPx": 21.600000381469727,
+        "lineHeightPercent": 100.55647277832031,
+        "lineHeightPercentFontSize": 120.00000762939453,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 3499,
+        "y": -388,
+        "width": 345,
+        "height": 308
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "path": " > Document > website > specialist > top story > Frame 1000002833 > Frame 24 > Frame 1000002895 > Open Button > Call now",
+      "text": "Call now",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 3549,
+        "y": -56,
+        "width": 56,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > specialist > top story > Frame 1000002833 > Frame 24 > Frame 1000002895 > Open Button > Navigate",
+      "text": "Navigate",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 3691,
+        "y": -56,
+        "width": 59,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > reg > Frame 24 > Register account",
+      "text": "Register account",
+      "style": {
+        "fontFamily": "SF Pro Display",
+        "fontPostScriptName": "SFProDisplay-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 32,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0.37400001287460327,
+        "lineHeightPx": 38.400001525878906,
+        "lineHeightPercent": 100.55647277832031,
+        "lineHeightPercentFontSize": 120.00000762939453,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5271,
+        "y": -544,
+        "width": 345,
+        "height": 38
+      }
+    },
+    {
+      "path": " > Document > website > auth > Frame 1000002909 > Frame 1000002909 > Frame 1000002907 > Open Button > Sign in",
+      "text": "Sign in",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5792.75,
+        "y": -502,
+        "width": 45,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > auth > Frame 1000002909 > Frame 1000002909 > Frame 1000002907 > Open Button > Sign in",
+      "text": "Sign in",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5969.25,
+        "y": -502,
+        "width": 45,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > auth > Frame 1000002909 > Frame 38 > btn > Sign up to MediMap",
+      "text": "Sign in to DocRoster",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5820,
+        "y": -274,
+        "width": 133,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > auth > Frame 1000002909 > Does not have an account? Register now!",
+      "text": "Does not have an account? Register now!",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 15.40000057220459,
+        "lineHeightPercent": 92.1767578125,
+        "lineHeightPercentFontSize": 110,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5759.5,
+        "y": -216,
+        "width": 254,
+        "height": 15
+      }
+    },
+    {
+      "path": " > Document > website > recover > Frame 1000002909 > Frame 38 > Frame 2 > Registered email",
+      "text": "Registered email",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "paragraphSpacing": 8,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 18,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": -0.5,
+        "lineHeightPx": 21.600000381469727,
+        "lineHeightPercent": 100.55647277832031,
+        "lineHeightPercentFontSize": 120.00000762939453,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": 5730,
+        "y": 134,
+        "width": 141,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > Group 5 > auth > Frame 1000002909 > Frame 1000002909 > Frame 1000002907 > Open Button > Sign in",
+      "text": "Sign in",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": -373.25,
+        "y": -2392,
+        "width": 45,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > Group 5 > auth > Frame 1000002909 > Frame 1000002909 > Frame 1000002907 > Open Button > Sign in",
+      "text": "Sign in",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": -196.75,
+        "y": -2392,
+        "width": 45,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > Group 5 > auth > Frame 1000002909 > Frame 38 > btn > Sign up to MediMap",
+      "text": "Sign in to DocRoster",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "CENTER",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 22.399999618530273,
+        "lineHeightPercent": 134.07528686523438,
+        "lineHeightPercentFontSize": 160,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": -346,
+        "y": -2164,
+        "width": 133,
+        "height": 22
+      }
+    },
+    {
+      "path": " > Document > website > Group 5 > auth > Frame 1000002909 > Does not have an account? Register now!",
+      "text": "Does not have an account? Register now!",
+      "style": {
+        "fontFamily": "SF Pro Text",
+        "fontPostScriptName": "SFProText-Bold",
+        "fontStyle": "Bold",
+        "fontWeight": 700,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "CENTER",
+        "letterSpacing": -0.40799999237060547,
+        "lineHeightPx": 15.40000057220459,
+        "lineHeightPercent": 92.1767578125,
+        "lineHeightPercentFontSize": 110,
+        "lineHeightUnit": "FONT_SIZE_%"
+      },
+      "position": {
+        "x": -406.5,
+        "y": -2106,
+        "width": 254,
+        "height": 15
+      }
+    },
+    {
+      "path": " > Document > website 2 > More - Client > Frame 13 > Group 16 > Frame 12 > Register",
+      "text": "Register",
+      "style": {
+        "fontFamily": "SF Pro Display",
+        "fontPostScriptName": "SFProDisplay-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0.1679999977350235,
+        "lineHeightPx": 18,
+        "lineHeightPercent": 107.73906707763672,
+        "lineHeightPercentFontSize": 128.57142639160156,
+        "lineHeightUnit": "PIXELS"
+      },
+      "position": {
+        "x": 895,
+        "y": 121,
+        "width": 53,
+        "height": 18
+      }
+    },
+    {
+      "path": " > Document > website 2 > More - Client > Frame 13 > Group 15 > Frame 12 > Sign in",
+      "text": "Sign in",
+      "style": {
+        "fontFamily": "SF Pro Display",
+        "fontPostScriptName": "SFProDisplay-Semibold",
+        "fontStyle": "Semibold",
+        "fontWeight": 600,
+        "textAutoResize": "WIDTH_AND_HEIGHT",
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0.1679999977350235,
+        "lineHeightPx": 18,
+        "lineHeightPercent": 107.73906707763672,
+        "lineHeightPercentFontSize": 128.57142639160156,
+        "lineHeightUnit": "PIXELS"
+      },
+      "position": {
+        "x": 895,
+        "y": 157,
+        "width": 43,
+        "height": 18
+      }
+    }
+  ]
+}

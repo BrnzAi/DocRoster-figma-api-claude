@@ -1,0 +1,137 @@
+<!-- Register card overlay -->
+<div class="login-overlay">
+  <div class="login-card register-card">
+    <!-- Profile Image Upload with Camera Button (Group 38) -->
+    <div class="profile-section">
+      <!-- Hidden file input -->
+      <input 
+        type="file" 
+        id="profileImageInput" 
+        accept="image/*" 
+        (change)="onProfileImageChange($event)"
+        style="display: none"
+      />
+      
+      <!-- Rectangle 14: 150x150 circle -->
+      <div class="profile-circle" (click)="triggerFileInput()">
+        @if (profileImageUrl) {
+          <img [src]="profileImageUrl" alt="Profile" class="profile-image">
+        } @else {
+          <!-- Default avatar icon -->
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+            <path d="M50 50C58.2843 50 65 43.2843 65 35C65 26.7157 58.2843 20 50 20C41.7157 20 35 26.7157 35 35C35 43.2843 41.7157 50 50 50Z" fill="#729EC6"/>
+            <path d="M50 55C33.4315 55 20 68.4315 20 85V90H80V85C80 68.4315 66.5685 55 50 55Z" fill="#729EC6"/>
+          </svg>
+        }
+      </div>
+      <!-- Camera button: 48x48, positioned bottom-right of circle -->
+      <button type="button" class="camera-btn" (click)="triggerFileInput()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+          <path d="M5.1817 4.75629L5.65637 2.38189C5.75307 1.89809 6.01446 1.46277 6.39605 1.15004C6.77763 0.837302 7.25581 0.666492 7.74917 0.666687H14.9172C15.4105 0.666492 15.8887 0.837302 16.2703 1.15004C16.6519 1.46277 16.9133 1.89809 17.01 2.38189L17.4846 4.75629C17.5591 5.12833 17.7377 5.47159 17.9996 5.74614C18.2615 6.02069 18.596 6.21526 18.9641 6.30722C19.8313 6.52416 20.6011 7.02474 21.1512 7.72941C21.7012 8.43407 21.9999 9.30237 21.9998 10.1963V17.7334C21.9998 18.8649 21.5503 19.9502 20.7502 20.7503C19.95 21.5505 18.8648 22 17.7332 22H4.93317C3.80158 22 2.71634 21.5505 1.91618 20.7503C1.11603 19.9502 0.666504 18.8649 0.666504 17.7334V10.1963C0.666422 9.30237 0.965145 8.43407 1.51519 7.72941C2.06524 7.02474 2.83504 6.52416 3.70224 6.30722C4.07036 6.21526 4.40481 6.02069 4.66671 5.74614C4.92861 5.47159 5.1072 5.12833 5.1817 4.75629V4.75629Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.3331 17.7334C13.6895 17.7334 15.5997 15.8232 15.5997 13.4667C15.5997 11.1103 13.6895 9.20007 11.3331 9.20007C8.97666 9.20007 7.06641 11.1103 7.06641 13.4667C7.06641 15.8232 8.97666 17.7334 11.3331 17.7334Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10.2666 4.93329H12.3999" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Close button (top right) -->
+    <button type="button" class="close-btn" (click)="goToLogin()">
+      <svg width="12.44" height="12.44" viewBox="0 0 14 14" fill="none">
+        <path d="M13 1L1 13M1 1L13 13" stroke="#0A1748" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Heading Section (Frame 24) -->
+    <div class="register-heading">
+      <h1>Register account</h1>
+      <p>Sign up to view and manage specialists</p>
+    </div>
+
+    <!-- Form Container with 24px gap between sections -->
+    <div class="form-container">
+      <!-- Sign Up Buttons - Reusable Component -->
+      <app-auth-buttons 
+        googleText="Sign up" 
+        appleText="Sign up"
+        (googleClick)="signInWithGoogle()"
+        (appleClick)="signInWithApple()"
+      />
+
+      <!-- Divider -->
+      <div class="divider">
+        <span>or</span>
+      </div>
+
+      <!-- Register Form -->
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-fields">
+          <div class="form-group">
+            <input
+              id="name"
+              type="text"
+              formControlName="name"
+              placeholder="Person or company name"
+              [class.invalid]="name?.invalid && (name?.dirty || name?.touched)"
+            />
+            @if (name?.invalid && (name?.dirty || name?.touched)) {
+              <div class="error-message">
+                @if (name?.errors?.['required']) { <span>Name is required</span> }
+                @if (name?.errors?.['minlength']) { <span>Name must be at least 2 characters</span> }
+              </div>
+            }
+          </div>
+
+          <div class="form-group">
+            <input
+              id="email"
+              type="email"
+              formControlName="email"
+              placeholder="Email used for login"
+              [class.invalid]="email?.invalid && (email?.dirty || email?.touched)"
+            />
+            @if (email?.invalid && (email?.dirty || email?.touched)) {
+              <div class="error-message">
+                @if (email?.errors?.['required']) { <span>Email is required</span> }
+                @if (email?.errors?.['email']) { <span>Please enter a valid email</span> }
+              </div>
+            }
+          </div>
+
+          <div class="form-group">
+            <input
+              id="phone"
+              type="tel"
+              formControlName="phone"
+              placeholder="Phone number (optional)"
+            />
+          </div>
+        </div>
+
+        @if (errorMessage) {
+          <div class="error-message">{{ errorMessage }}</div>
+        }
+
+        <button type="submit" class="btn-primary" [disabled]="!registerForm.valid || loading">
+          @if (!loading) { <span>Sign up to DocRoster</span> }
+          @if (loading) { <span>Signing up...</span> }
+        </button>
+        
+        <!-- Terms and Conditions Checkbox -->
+        <div class="terms-checkbox">
+          <label class="checkbox-container">
+            <input type="checkbox" id="terms" formControlName="terms" />
+            <span class="checkmark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M13.3346 4L6.0013 11.3333L2.66797 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="checkbox-label">
+              I've read and agree to the 
+              <a href="/terms">Terms and Conditions</a>
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

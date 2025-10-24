@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --configuration production --base-href /DocRoster-figma-api-claude/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build:prod && cp ../docs/browser/index.html ../docs/browser/404.html && touch ../docs/.nojekyll"
   },
   "private": true,
   "dependencies": {

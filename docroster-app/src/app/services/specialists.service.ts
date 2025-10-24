@@ -23,17 +23,55 @@ export class SpecialistsService {
     const filters = this.searchFiltersSignal();
     const bounds = this.mapBoundsSignal();
 
-    // Apply search filters
+    // Apply specialty filters
     if (filters.specialty && filters.specialty.length > 0) {
       specialists = specialists.filter(s => 
         filters.specialty!.includes(s.specialty.id)
       );
     }
 
+    // Apply fee range filter
+    if (filters.feeRange) {
+      specialists = specialists.filter(s => {
+        if (filters.feeRange === 'low') return s.fee < 200;
+        if (filters.feeRange === 'medium') return s.fee >= 200 && s.fee <= 300;
+        if (filters.feeRange === 'high') return s.fee > 300;
+        return true;
+      });
+    }
+
+    // Apply gender filter
+    if (filters.gender && filters.gender !== 'any') {
+      // Note: We would need a gender field in Specialist model to filter by gender
+      // For now, we'll just acknowledge the filter exists
+    }
+
+    // Apply location filter
+    if (filters.location) {
+      const locationMap: { [key: string]: string } = {
+        'belleville': 'belleville',
+        'sault': 'sault ste. marie',
+        'thunder': 'thunder bay',
+        'vancouver': 'vancouver'
+      };
+      const targetCity = locationMap[filters.location.toLowerCase()] || filters.location.toLowerCase();
+      specialists = specialists.filter(s => 
+        s.location.city.toLowerCase().includes(targetCity)
+      );
+    }
+
+    // Apply type filter (hybrid/in-person/virtual)
+    if (filters.type) {
+      // Note: We would need a consultationType field in Specialist model
+      // For now, we'll just acknowledge the filter exists
+    }
+
+    // Apply rating filter
     if (filters.minRating !== undefined) {
       specialists = specialists.filter(s => s.rating >= filters.minRating!);
     }
 
+    // Apply language filter
     if (filters.languages && filters.languages.length > 0) {
       specialists = specialists.filter(s =>
         filters.languages!.some(lang => s.languages.includes(lang))
@@ -48,6 +86,16 @@ export class SpecialistsService {
         s.location.lng >= bounds.west &&
         s.location.lng <= bounds.east
       );
+    }
+
+    // Apply sorting
+    if (filters.sortBy) {
+      specialists = [...specialists].sort((a, b) => {
+        if (filters.sortBy === 'fee') return a.fee - b.fee;
+        if (filters.sortBy === 'availability') return b.rating - a.rating; // Placeholder
+        if (filters.sortBy === 'distance') return 0; // Would need distance calculation
+        return 0;
+      });
     }
 
     return specialists;
@@ -109,10 +157,12 @@ export class SpecialistsService {
       specialty: this.mockSpecialties[0], // Pediatrics
       rating: 4.8,
       reviewCount: 245,
+      fee: 175,
+      clinic: 'Health Advancement Center',
       location: {
         lat: 49.2827,
         lng: -123.1207,
-        address: '1234 Main St',
+        address: 'Sunny Path Community Center, 123 Sunshine Ave, 90210',
         city: 'Vancouver',
         state: 'BC',
         zipCode: 'V6B 2W9'
@@ -139,6 +189,8 @@ export class SpecialistsService {
       specialty: this.mockSpecialties[1], // Laboratory
       rating: 4.9,
       reviewCount: 189,
+      fee: 200,
+      clinic: 'Vancouver Diagnostic Lab',
       location: {
         lat: 49.2847,
         lng: -123.1147,
@@ -169,6 +221,8 @@ export class SpecialistsService {
       specialty: this.mockSpecialties[2], // Law
       rating: 4.7,
       reviewCount: 321,
+      fee: 300,
+      clinic: 'Martinez Law Offices',
       location: {
         lat: 49.2657,
         lng: -123.1387,
@@ -199,6 +253,8 @@ export class SpecialistsService {
       specialty: this.mockSpecialties[3], // Mental Health
       rating: 4.9,
       reviewCount: 412,
+      fee: 250,
+      clinic: 'Mindful Wellness Center',
       location: {
         lat: 49.2777,
         lng: -123.1047,
@@ -228,7 +284,9 @@ export class SpecialistsService {
       avatar: 'https://i.pravatar.cc/150?img=10',
       specialty: this.mockSpecialties[4], // Cardiology
       rating: 4.8,
-      reviewCount: 278,
+      reviewCount: 305,
+      fee: 350,
+      clinic: 'Vancouver Heart Institute',
       location: {
         lat: 49.2897,
         lng: -123.1307,
@@ -257,8 +315,10 @@ export class SpecialistsService {
       email: 'amanda.brown@docroster.com',
       avatar: 'https://i.pravatar.cc/150?img=20',
       specialty: this.mockSpecialties[5], // Dermatology
-      rating: 4.7,
+      rating: 4.6,
       reviewCount: 198,
+      fee: 225,
+      clinic: 'Skin Health Clinic',
       location: {
         lat: 49.2707,
         lng: -123.1197,
@@ -287,8 +347,10 @@ export class SpecialistsService {
       email: 'thomas.anderson@docroster.com',
       avatar: 'https://i.pravatar.cc/150?img=15',
       specialty: this.mockSpecialties[2], // Law
-      rating: 4.6,
-      reviewCount: 156,
+      rating: 4.7,
+      reviewCount: 267,
+      fee: 275,
+      clinic: 'Anderson Legal Group',
       location: {
         lat: 49.2617,
         lng: -123.1137,
@@ -318,7 +380,9 @@ export class SpecialistsService {
       avatar: 'https://i.pravatar.cc/150?img=16',
       specialty: this.mockSpecialties[0], // Pediatrics
       rating: 4.9,
-      reviewCount: 389,
+      reviewCount: 278,
+      fee: 175,
+      clinic: 'Children First Medical Center',
       location: {
         lat: 49.2937,
         lng: -123.1437,
@@ -399,13 +463,21 @@ export class SpecialistsService {
    */
   searchSpecialists(query: string): Observable<Specialist[]> {
     const lowerQuery = query.toLowerCase();
-    return of(
-      this.mockSpecialists.filter(s =>
-        s.name.toLowerCase().includes(lowerQuery) ||
-        s.specialty.name.toLowerCase().includes(lowerQuery) ||
-        s.description.toLowerCase().includes(lowerQuery)
-      )
-    ).pipe(delay(200));
+    const filtered = this.mockSpecialists.filter(s =>
+      s.name.toLowerCase().includes(lowerQuery) ||
+      s.specialty.name.toLowerCase().includes(lowerQuery) ||
+      s.description.toLowerCase().includes(lowerQuery) ||
+      s.clinic.toLowerCase().includes(lowerQuery) ||
+      s.location.city.toLowerCase().includes(lowerQuery)
+    );
+    
+    return of(filtered).pipe(
+      delay(200),
+      map(specialists => {
+        this.specialistsSignal.set(specialists);
+        return specialists;
+      })
+    );
   }
 
   private loadMockData(): void {

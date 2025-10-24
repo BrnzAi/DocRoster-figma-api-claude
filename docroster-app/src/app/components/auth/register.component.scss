@@ -1,0 +1,466 @@
+// Overlay container
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// Register card - 393x718
+.login-card {
+  position: relative;
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 24px 24px; // Added 24px horizontal padding
+  gap: 24px; // Register uses 24px gap
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(12px);
+  pointer-events: auto;
+  box-shadow: 0 0 48px 0 rgba(10, 23, 72, 0.24);
+  box-sizing: border-box;
+}
+
+// Profile section (Group 38: 155x150)
+.profile-section {
+  position: relative;
+  width: 155px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Rectangle 14: 150x150 stroked circle
+.profile-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 1000px; // Makes perfect circle
+  border: 1px solid rgba(10, 23, 72, 0.12);
+  background: rgba(114, 158, 198, 0.1); // Light background for placeholder
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(114, 158, 198, 0.15);
+  }
+
+  svg {
+    opacity: 0.4;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Camera button: akar-icons:camera (48x48)
+// Using user's EXACT CSS specs
+.camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  padding: 13.333px;
+  align-items: flex-start;
+  gap: 13.333px;
+  border-radius: 1333.333px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(26.666667938232422px);
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.30);
+  }
+
+  svg {
+    width: 21.33px;
+    height: 21.33px;
+  }
+}
+
+// Close button (top-right): 36x36
+// WHITE opacity 0.48 + glass effect + drop shadow
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 750px; // Figma spec
+  background: rgba(255, 255, 255, 0.48); // White semi-transparent
+  backdrop-filter: blur(12px); // Glass effect
+  box-shadow: 0 0 48px rgba(10, 23, 72, 0.24); // Drop shadow
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 10;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.64);
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: 12.44px;
+    height: 12.44px;
+  }
+}
+
+// Register heading section (Frame 24: 345x68)
+.register-heading {
+  display: flex;
+  width: 345px;
+  flex-direction: column;
+  align-items: flex-start; // LEFT aligned, not center
+  gap: 8px;
+  text-align: left; // LEFT aligned
+
+  h1 {
+    color: #0A1748;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+
+  p {
+    color: rgba(10, 23, 72, 0.60); // EXACT opacity from Figma
+    font-family: "SF UI Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px; // EXACT size from Figma, not 14px
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+}
+
+// Form container (Frame 1000002909: 393x376 with 24px gap)
+.form-container {
+  display: flex;
+  width: 100%; // Full width to use parent's padding
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+// Sign in buttons container - EXACT same as login page
+.sign-in-buttons {
+  display: flex;
+  width: 345px;
+  gap: 8px; // EXACT gap from Figma
+  
+  .sign-in-btn {
+    // Each button: 168.5px width (stretched to fill with flex: 1 0 0)
+    display: flex;
+    height: 46px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0; // Makes buttons stretch equally
+    border-radius: 24px;
+    background: #000;
+    backdrop-filter: blur(12px);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    font-family: "SF UI Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+    
+    svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    
+    span {
+      white-space: nowrap;
+      color: #FFFFFF;
+    }
+  }
+}
+
+// OR divider - EXACT same as login
+.divider {
+  display: flex;
+  width: 345px;
+  height: 22px;
+  align-items: center;
+  gap: 16px;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(10, 23, 72, 0.12);
+  }
+
+  span {
+    color: #0A1748;
+    text-align: center;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.4;
+    text-transform: uppercase;
+  }
+}
+
+// Form fields - Frame 38: 345x214
+.form-fields {
+  display: flex;
+  width: 345px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px; // EXACT gap from Figma Frame 38
+  margin-bottom: 12px; // Space before submit button
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+
+  label {
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  input {
+    width: 100%; // Full width of parent (345px)
+    height: 48px; // EXACT height from Figma (Frame 3, 2, 48)
+    padding: 0 16px; // Horizontal padding only
+    border-radius: 12px;
+    border: 1px solid rgba(10, 23, 72, 0.12);
+    background: #FFF;
+    color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    transition: all 0.2s;
+    box-sizing: border-box; // Include border in size calculation
+
+    &::placeholder {
+      color: rgba(10, 23, 72, 0.4);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba(10, 23, 72, 0.4);
+      box-shadow: 0 0 0 4px rgba(10, 23, 72, 0.08);
+    }
+  }
+}
+
+// Primary button - btn: 345x46
+.btn-primary {
+  display: flex;
+  width: 345px;
+  height: 46px; // EXACT height from Figma
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: rgba(10, 23, 72, 0.80);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 24px; // Space before checkbox (24px gap)
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+
+  &:hover:not(:disabled) {
+    background: rgba(10, 23, 72, 0.90);
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Terms checkbox - Frame 33: 393x24
+// Terms checkbox - Custom styled with Figma specs
+.terms-checkbox {
+  display: flex;
+  width: 345px;
+  align-items: flex-start;
+  gap: 12px;
+
+  .checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      z-index: 1;
+      
+      &:checked + .checkmark {
+        background: rgba(10, 23, 72, 0.8); // Blue filled background
+        border: none; // NO white border
+        
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+
+    .checkmark {
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border: 1px solid rgba(10, 23, 72, 0.12);
+      background: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      pointer-events: none;
+      
+      svg {
+        opacity: 0;
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        transition: opacity 0.2s;
+        
+        path {
+          stroke: #FFF; // White checkmark
+        }
+      }
+    }
+
+    .checkbox-label {
+      flex: 1;
+      color: #0A1748;
+      font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+      
+      a {
+        color: #0A1748;
+        font-weight: 700;
+        text-decoration: underline;
+        transition: opacity 0.2s;
+        
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+// Login link
+.login-link {
+  display: flex;
+  width: 345px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: #0A1748;
+  text-align: center;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  opacity: 0.8;
+
+  a {
+    color: #0A1748;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Error message
+.error-message {
+  width: 345px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+
+  color: #991B1B;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}

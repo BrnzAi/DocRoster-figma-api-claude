@@ -13,6 +13,16 @@ export const routes: Routes = [
     canActivate: [guestGuard]
   },
   {
+    path: 'auth/register',
+    loadComponent: () => import('./components/auth/register.component').then(m => m.RegisterComponent),
+    canActivate: [guestGuard]
+  },
+  {
+    path: 'auth/recover',
+    loadComponent: () => import('./components/auth/recover.component').then(m => m.RecoverComponent),
+    canActivate: [guestGuard]
+  },
+  {
     path: 'search',
     loadComponent: () => import('./components/search/search.component').then(m => m.SearchComponent),
     canActivate: [authGuard]

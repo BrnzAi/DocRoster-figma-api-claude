@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { GoogleMap, MapMarker, GoogleMapsModule } from '@angular/google-maps';
 import { SpecialistsService } from '../../services/specialists.service';
-import { AuthService } from '../../services/auth.service';
 import { Specialist, SearchFilters } from '../../models/specialist.model';
 import { environment } from '../../../environments/environment';
 
@@ -23,6 +22,13 @@ export class SearchComponent implements OnInit {
   showFilters = signal(false);
   selectedSpecialties = signal<string[]>([]);
   
+  // Filter state
+  sortBy: string | null = 'fee';
+  feeFilter: string | null = null;
+  genderFilter: string | null = 'any';
+  locationFilter: string | null = null;
+  typeFilter: string | null = null;
+  
   // Map configuration
   mapOptions: google.maps.MapOptions = {
     center: environment.defaultCenter,
@@ -37,14 +43,12 @@ export class SearchComponent implements OnInit {
 
   constructor(
     public specialistsService: SpecialistsService,
-    public authService: AuthService,
     private router: Router
   ) {}
 
   // Get data from services
   specialists = computed(() => this.specialistsService.filteredSpecialists());
   selectedSpecialist = computed(() => this.specialistsService.selectedSpecialist());
-  currentUser = computed(() => this.authService.currentUser());
   
   // Get specialties list
   get specialties() {
@@ -68,14 +72,38 @@ export class SearchComponent implements OnInit {
   }
 
   /**
-   * Handle search input
+   * Handle search input change (real-time filtering)
    */
-  onSearch(): void {
+  onSearchInput(value: string): void {
+    this.searchQuery.set(value);
+    this.performSearch();
+  }
+
+  /**
+   * Perform search with current query and filters
+   */
+  performSearch(): void {
     const query = this.searchQuery();
+    
+    // Build comprehensive filters
+    const filters: SearchFilters = {
+      specialty: this.selectedSpecialties().length > 0 ? this.selectedSpecialties() : undefined,
+      sortBy: this.sortBy || undefined,
+      feeRange: this.feeFilter || undefined,
+      gender: this.genderFilter && this.genderFilter !== 'any' ? this.genderFilter : undefined,
+      location: this.locationFilter || undefined,
+      type: this.typeFilter || undefined
+    };
+    
+    // Apply search with all filters
     if (query.trim()) {
-      this.specialistsService.searchSpecialists(query).subscribe();
+      this.specialistsService.searchSpecialists(query).subscribe(() => {
+        this.specialistsService.updateSearchFilters(filters);
+      });
     } else {
-      this.specialistsService.loadSpecialists().subscribe();
+      this.specialistsService.loadSpecialists().subscribe(() => {
+        this.specialistsService.updateSearchFilters(filters);
+      });
     }
   }
 
@@ -104,26 +132,45 @@ export class SearchComponent implements OnInit {
   }
 
   /**
-   * Apply all filters
+   * Apply all filters (called from Apply button in modal)
    */
   applyFilters(): void {
-    const filters: SearchFilters = {
-      specialty: this.selectedSpecialties().length > 0 ? this.selectedSpecialties() : undefined
-    };
-    
-    this.specialistsService.updateSearchFilters(filters);
+    this.showFilters.set(false);
+    this.performSearch();
   }
 
   /**
-   * Clear all filters
+   * Clear all filters (called from Reset button in modal)
    */
   clearFilters(): void {
     this.selectedSpecialties.set([]);
+    this.sortBy = 'fee';
+    this.feeFilter = null;
+    this.genderFilter = 'any';
+    this.locationFilter = null;
+    this.typeFilter = null;
+    this.searchQuery.set('');
     this.specialistsService.updateSearchFilters({});
+    this.specialistsService.loadSpecialists().subscribe();
+  }
+
+  /**
+   * Toggle location filter
+   */
+  toggleLocationFilter(location: string): void {
+    this.locationFilter = this.locationFilter === location ? null : location;
+  }
+
+  /**
+   * Toggle type filter
+   */
+  toggleTypeFilter(type: string): void {
+    this.typeFilter = this.typeFilter === type ? null : type;
   }
 
   /**
    * Handle specialist selection from list
+```
    */
   selectSpecialist(specialist: Specialist): void {
     this.specialistsService.selectSpecialist(specialist);
@@ -177,10 +224,11 @@ export class SearchComponent implements OnInit {
   }
 
   /**
-   * Logout
+   * Logout user
    */
   logout(): void {
-    this.authService.logout();
+    // TODO: Implement logout when auth is integrated
+    this.router.navigate(['/login']);
   }
 
   /**
@@ -194,34 +242,49 @@ export class SearchComponent implements OnInit {
    * Create custom marker icon with specialist avatar
    */
   private createMarkerIcon(specialist: Specialist): google.maps.Icon {
+    // Get index of specialist in current list
+    const index = this.specialists().findIndex(s => s.id === specialist.id) + 1;
+    
     return {
-      url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(this.getMarkerSvg(specialist))}`,
-      scaledSize: new google.maps.Size(40, 50),
-      anchor: new google.maps.Point(20, 50)
+      url: this.getMarkerImageUrl(specialist, index),
+      scaledSize: new google.maps.Size(40, 52),
+      anchor: new google.maps.Point(20, 52)
     };
   }
 
   /**
-   * Generate SVG for marker with avatar
+   * Generate marker image URL - proper map pin shape with number
    */
-  private getMarkerSvg(specialist: Specialist): string {
+  private getMarkerImageUrl(specialist: Specialist, number: number): string {
     const color = specialist.specialty.color;
-    return `
-      <svg width="40" height="50" viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg">
+    const svg = `
+      <svg width="40" height="52" viewBox="0 0 40 52" xmlns="http://www.w3.org/2000/svg">
+        <!-- Drop shadow -->
         <defs>
-          <clipPath id="circleClip-${specialist.id}">
-            <circle cx="20" cy="18" r="12"/>
-          </clipPath>
+          <filter id="shadow-${number}" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+          </filter>
         </defs>
-        <!-- Pin body -->
+        
+        <!-- Pin body - teardrop shape -->
         <path d="M20 0C11.716 0 5 6.716 5 15c0 8.284 15 35 15 35s15-26.716 15-35C35 6.716 28.284 0 20 0z" 
-              fill="${color}" stroke="white" stroke-width="2"/>
-        <!-- Avatar circle background -->
-        <circle cx="20" cy="18" r="13" fill="white"/>
-        <!-- Avatar image -->
-        <image href="${specialist.avatar}" x="8" y="6" width="24" height="24" 
-               clip-path="url(#circleClip-${specialist.id})" preserveAspectRatio="xMidYMid slice"/>
+              fill="${color}" 
+              stroke="white" 
+              stroke-width="2"
+              filter="url(#shadow-${number})"/>
+        
+        <!-- White circle for number -->
+        <circle cx="20" cy="15" r="10" fill="white"/>
+        
+        <!-- Number text -->
+        <text x="20" y="20" 
+              font-family="SF Pro Text, Arial, sans-serif" 
+              font-size="13" 
+              font-weight="700" 
+              fill="#0A1748" 
+              text-anchor="middle">${number}</text>
       </svg>
     `;
+    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   }
 }

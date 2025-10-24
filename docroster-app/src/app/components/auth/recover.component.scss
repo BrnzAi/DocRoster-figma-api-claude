@@ -1,0 +1,22 @@
+// Use all styles from login component
+@use './login.component.scss';
+
+// Recover-specific adjustments
+.recover-card {
+  // Smaller card for recover page (only email input + button)
+  .form-container {
+    gap: 24px;
+  }
+}
+
+// Success message styling
+.success-message {
+  padding: 12px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #4CAF50;
+  font-size: 14px;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+}

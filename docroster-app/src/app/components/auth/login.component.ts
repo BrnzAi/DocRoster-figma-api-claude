@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { AuthService } from '../../services/auth.service';
-import { environment } from '../../../environments/environment';
+import { AuthService } from './data-access/auth.service';
+import { AuthButtonsComponent } from './ui/auth-buttons.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, GoogleMapsModule],
+  imports: [CommonModule, ReactiveFormsModule, AuthButtonsComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -17,23 +16,6 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   loading = false;
   errorMessage = '';
-
-  // Google Maps configuration for background
-  mapOptions: google.maps.MapOptions = {
-    center: { lat: 49.2827, lng: -123.1207 }, // Vancouver
-    zoom: 12,
-    disableDefaultUI: true,
-    clickableIcons: false,
-    gestureHandling: 'none', // Disable map interactions
-    mapId: environment.googleMapsMapId,
-    styles: [
-      {
-        featureType: 'poi',
-        elementType: 'labels',
-        stylers: [{ visibility: 'off' }]
-      }
-    ]
-  };
 
   constructor(
     private fb: FormBuilder,
@@ -74,25 +56,50 @@ export class LoginComponent implements OnInit {
       },
       error: (error) => {
         this.loading = false;
-        this.errorMessage = error.message || 'Invalid email or password';
+        console.error('Login error:', error);
+        this.errorMessage = error?.message || 'Invalid email or password';
       }
     });
   }
 
-  // Quick login helpers for demo
-  loginAsUser(): void {
-    this.loginForm.patchValue({
-      email: 'demo@docroster.com',
-      password: 'password123'
+  // Social login methods (mock implementations)
+  signInWithGoogle(): void {
+    // Mock Google sign-in - in production this would use Firebase Auth or similar
+    this.loading = true;
+    const mockEmail = 'google.user@example.com';
+    this.authService.login({ email: mockEmail, password: 'password123' }).subscribe({
+      next: () => {
+        this.loading = false;
+        this.router.navigate(['/search']);
+      },
+      error: (error) => {
+        this.loading = false;
+        this.errorMessage = error.message || 'Google sign-in failed';
+      }
     });
-    this.onSubmit();
   }
 
-  loginAsSpecialist(): void {
-    this.loginForm.patchValue({
-      email: 'specialist@docroster.com',
-      password: 'specialist123'
+  signInWithApple(): void {
+    // Mock Apple sign-in - in production this would use Apple Sign In SDK
+    this.loading = true;
+    const mockEmail = 'apple.user@example.com';
+    this.authService.login({ email: mockEmail, password: 'password123' }).subscribe({
+      next: () => {
+        this.loading = false;
+        this.router.navigate(['/search']);
+      },
+      error: (error) => {
+        this.loading = false;
+        this.errorMessage = error.message || 'Apple sign-in failed';
+      }
     });
-    this.onSubmit();
+  }
+
+  goToRegister(): void {
+    this.router.navigate(['/auth/register']);
+  }
+
+  goToRecover(): void {
+    this.router.navigate(['/auth/recover']);
   }
 }

@@ -10,6 +10,8 @@ export interface Specialist {
   description: string;
   phone: string;
   address: string;
+  fee: number; // consultation fee
+  clinic: string; // clinic/practice name
   certifications: string[];
   experience: number; // years
   availability: Availability[];
@@ -46,6 +48,11 @@ export interface SearchFilters {
   maxDistance?: number; // in km
   availableNow?: boolean;
   languages?: string[];
+  sortBy?: string; // 'fee', 'distance', 'availability'
+  feeRange?: string; // 'low', 'medium', 'high'
+  gender?: string; // 'male', 'female', 'any'
+  location?: string; // city name
+  type?: string; // 'hybrid', 'in-person', 'virtual'
 }
 
 export interface MapBounds {

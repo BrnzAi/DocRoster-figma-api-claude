@@ -1,0 +1,3121 @@
+[
+  {
+    "id": "1814:1174",
+    "name": "search",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 393,
+      "height": 808
+    },
+    "fills": [
+      {
+        "opacity": 0.23999999463558197,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1175",
+    "name": "Frame 1000002924",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 378,
+      "width": 393,
+      "height": 1518
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1176",
+    "name": "Frame 1000002863",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 378,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1177",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 414,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1178",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 414,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1179",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 390,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1180",
+    "name": "Dr. Sarah Johnson",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 390,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Sarah Johnson"
+  },
+  {
+    "id": "1978:41",
+    "name": "General Medicine, fee $175",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 418,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "General Medicine, fee $175"
+  },
+  {
+    "id": "1814:1182",
+    "name": "Health Advancement Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 441,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Health Advancement Center"
+  },
+  {
+    "id": "1814:1183",
+    "name": "Sunny Path Community Center, 123 Sunshine Ave, 90210",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 464,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Sunny Path Community Center, 123 Sunshine Ave, 90210"
+  },
+  {
+    "id": "1814:1184",
+    "name": "Frame 1000002864",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 506,
+      "width": 393,
+      "height": 113
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1185",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 534.5,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1186",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 534.5,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1187",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 518,
+      "width": 265,
+      "height": 89
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1188",
+    "name": "Dr. Michael Thompson",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 518,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Michael Thompson"
+  },
+  {
+    "id": "1978:43",
+    "name": "Gynecology, fee $200",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 546,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Gynecology, fee $200"
+  },
+  {
+    "id": "1814:1190",
+    "name": "Connection Point Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 569,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Connection Point Center"
+  },
+  {
+    "id": "1814:1191",
+    "name": "Talent Growth Hub, 456 Skill St, 90211",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 592,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Talent Growth Hub, 456 Skill St, 90211"
+  },
+  {
+    "id": "1814:1192",
+    "name": "Frame 1000002865",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 619,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1193",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 655,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1194",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 655,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1195",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 631,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1196",
+    "name": "Dr. Emily Carter",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 631,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Emily Carter"
+  },
+  {
+    "id": "1978:45",
+    "name": "Dermatology, fee $150",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 659,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dermatology, fee $150"
+  },
+  {
+    "id": "1814:1198",
+    "name": "Community Wellness Initiative",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 682,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Community Wellness Initiative"
+  },
+  {
+    "id": "1814:1199",
+    "name": "Insight Development Center, 789 Awareness Blvd, 90212",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 705,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Insight Development Center, 789 Awareness Blvd, 90212"
+  },
+  {
+    "id": "1814:1200",
+    "name": "Frame 1000002866",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 747,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1201",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 783,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1202",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 783,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1203",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 759,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1204",
+    "name": "Dr. David Lee",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 759,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. David Lee"
+  },
+  {
+    "id": "1978:47",
+    "name": "Laboratory Diagnostics, fee $75",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 787,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Laboratory Diagnostics, fee $75"
+  },
+  {
+    "id": "1814:1206",
+    "name": "Innovative Care Clinic",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 810,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Innovative Care Clinic"
+  },
+  {
+    "id": "1814:1207",
+    "name": "Empowerment Academy, 321 Uplift Rd, 90213",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 833,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Empowerment Academy, 321 Uplift Rd, 90213"
+  },
+  {
+    "id": "1814:1208",
+    "name": "Frame 1000002867",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 875,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1209",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 911,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1210",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 911,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1211",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 887,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1212",
+    "name": "Dr. Emily Greenfield",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 887,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Emily Greenfield"
+  },
+  {
+    "id": "1978:49",
+    "name": "General Medicine, fee $175",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 915,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "General Medicine, fee $175"
+  },
+  {
+    "id": "1814:1214",
+    "name": "Innovative Wellness Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 938,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Innovative Wellness Center"
+  },
+  {
+    "id": "1814:1215",
+    "name": "Inspiration Institute, 789 Elevate Blvd, 90214",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 961,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Inspiration Institute, 789 Elevate Blvd, 90214"
+  },
+  {
+    "id": "1814:1216",
+    "name": "Frame 1000002868",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1003,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1217",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1039,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1218",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1039,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1219",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1015,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1220",
+    "name": "Dr. Sarah Ecohart",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1015,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Sarah Ecohart"
+  },
+  {
+    "id": "1978:51",
+    "name": "Gynecology, fee $200",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1043,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Gynecology, fee $200"
+  },
+  {
+    "id": "1814:1222",
+    "name": "Progressive Health Hub",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1066,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Progressive Health Hub"
+  },
+  {
+    "id": "1814:1223",
+    "name": "Creativity Academy, 456 Inspire Ave, 90214",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1089,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Creativity Academy, 456 Inspire Ave, 90214"
+  },
+  {
+    "id": "1978:55",
+    "name": "Frame 1000002869",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1131,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:56",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1167,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:57",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1167,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:58",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1143,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:59",
+    "name": "Dr. Sarah Johnson",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1143,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Sarah Johnson"
+  },
+  {
+    "id": "1978:60",
+    "name": "General Medicine, fee $175",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1171,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "General Medicine, fee $175"
+  },
+  {
+    "id": "1978:61",
+    "name": "Health Advancement Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1194,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Health Advancement Center"
+  },
+  {
+    "id": "1978:62",
+    "name": "Sunny Path Community Center, 123 Sunshine Ave, 90210",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1217,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Sunny Path Community Center, 123 Sunshine Ave, 90210"
+  },
+  {
+    "id": "1978:63",
+    "name": "Frame 1000002870",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1259,
+      "width": 393,
+      "height": 113
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:64",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1287.5,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:65",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1287.5,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:66",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1271,
+      "width": 265,
+      "height": 89
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:67",
+    "name": "Dr. Michael Thompson",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1271,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Michael Thompson"
+  },
+  {
+    "id": "1978:68",
+    "name": "Gynecology, fee $200",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1299,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Gynecology, fee $200"
+  },
+  {
+    "id": "1978:69",
+    "name": "Connection Point Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1322,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Connection Point Center"
+  },
+  {
+    "id": "1978:70",
+    "name": "Talent Growth Hub, 456 Skill St, 90211",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1345,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Talent Growth Hub, 456 Skill St, 90211"
+  },
+  {
+    "id": "1978:71",
+    "name": "Frame 1000002871",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1372,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:72",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1408,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:73",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1408,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:74",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1384,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:75",
+    "name": "Dr. Emily Carter",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1384,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Emily Carter"
+  },
+  {
+    "id": "1978:76",
+    "name": "Dermatology, fee $150",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1412,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dermatology, fee $150"
+  },
+  {
+    "id": "1978:77",
+    "name": "Community Wellness Initiative",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1435,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Community Wellness Initiative"
+  },
+  {
+    "id": "1978:78",
+    "name": "Insight Development Center, 789 Awareness Blvd, 90212",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1458,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Insight Development Center, 789 Awareness Blvd, 90212"
+  },
+  {
+    "id": "1978:79",
+    "name": "Frame 1000002872",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1500,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:80",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1536,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:81",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1536,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:82",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1512,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:83",
+    "name": "Dr. David Lee",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1512,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. David Lee"
+  },
+  {
+    "id": "1978:84",
+    "name": "Laboratory Diagnostics, fee $75",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1540,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Laboratory Diagnostics, fee $75"
+  },
+  {
+    "id": "1978:85",
+    "name": "Innovative Care Clinic",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1563,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Innovative Care Clinic"
+  },
+  {
+    "id": "1978:86",
+    "name": "Empowerment Academy, 321 Uplift Rd, 90213",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1586,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Empowerment Academy, 321 Uplift Rd, 90213"
+  },
+  {
+    "id": "1978:87",
+    "name": "Frame 1000002873",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1628,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:88",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1664,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:89",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1664,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:90",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1640,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:91",
+    "name": "Dr. Emily Greenfield",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1640,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Emily Greenfield"
+  },
+  {
+    "id": "1978:92",
+    "name": "General Medicine, fee $175",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1668,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "General Medicine, fee $175"
+  },
+  {
+    "id": "1978:93",
+    "name": "Innovative Wellness Center",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1691,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Innovative Wellness Center"
+  },
+  {
+    "id": "1978:94",
+    "name": "Inspiration Institute, 789 Elevate Blvd, 90214",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1714,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Inspiration Institute, 789 Elevate Blvd, 90214"
+  },
+  {
+    "id": "1978:95",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 0,
+      "y": 1756,
+      "width": 393,
+      "height": 128
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:96",
+    "name": "Group 144",
+    "type": "GROUP",
+    "rect": {
+      "x": 24,
+      "y": 1792,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:97",
+    "name": "Ellipse 5",
+    "type": "ELLIPSE",
+    "rect": {
+      "x": 24,
+      "y": 1792,
+      "width": 56,
+      "height": 56
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "IMAGE",
+        "scaleMode": "FILL",
+        "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac"
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:98",
+    "name": "Frame 1000002874",
+    "type": "FRAME",
+    "rect": {
+      "x": 104,
+      "y": 1768,
+      "width": 265,
+      "height": 104
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1978:99",
+    "name": "Dr. Sarah Ecohart",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1768,
+      "width": 265,
+      "height": 20
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": -0.5,
+      "lineHeightPx": 19.80000114440918,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Dr. Sarah Ecohart"
+  },
+  {
+    "id": "1978:100",
+    "name": "Gynecology, fee $200",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1796,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Gynecology, fee $200"
+  },
+  {
+    "id": "1978:101",
+    "name": "Progressive Health Hub",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1819,
+      "width": 265,
+      "height": 15
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Progressive Health Hub"
+  },
+  {
+    "id": "1978:102",
+    "name": "Creativity Academy, 456 Inspire Ave, 90214",
+    "type": "TEXT",
+    "rect": {
+      "x": 104,
+      "y": 1842,
+      "width": 265,
+      "height": 30
+    },
+    "fills": [
+      {
+        "opacity": 0.6000000238418579,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Regular",
+      "fontStyle": "Regular",
+      "fontWeight": 400,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 14,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 15.40000057220459,
+      "lineHeightPercent": 92.1767578125,
+      "lineHeightPercentFontSize": 110,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Creativity Academy, 456 Inspire Ave, 90214"
+  },
+  {
+    "id": "1814:1297",
+    "name": "Frame 24",
+    "type": "FRAME",
+    "rect": {
+      "x": 24,
+      "y": 96,
+      "width": 345,
+      "height": 258
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "1814:1298",
+    "name": "Search results for",
+    "type": "TEXT",
+    "rect": {
+      "x": 24,
+      "y": 96,
+      "width": 345,
+      "height": 22
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textCase": "UPPER",
+      "textAutoResize": "HEIGHT",
+      "fontSize": 18,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.40799999237060547,
+      "lineHeightPx": 21.600000381469727,
+      "lineHeightPercent": 100.55647277832031,
+      "lineHeightPercentFontSize": 120.00000762939453,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Search results for"
+  },
+  {
+    "id": "1814:1299",
+    "name": "Find me an Occupational Therapist who travels to Thunder Bay for catastrophic assessments",
+    "type": "TEXT",
+    "rect": {
+      "x": 24,
+      "y": 126,
+      "width": 345,
+      "height": 228
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Display",
+      "fontPostScriptName": "SFProDisplay-Bold",
+      "fontStyle": "Bold",
+      "fontWeight": 700,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 32,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "TOP",
+      "letterSpacing": 0.37400001287460327,
+      "lineHeightPx": 38.400001525878906,
+      "lineHeightPercent": 100.55647277832031,
+      "lineHeightPercentFontSize": 120.00000762939453,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Find me an Occupational Therapist who travels to Thunder Bay for catastrophic assessments"
+  },
+  {
+    "id": "1850:2289",
+    "name": "search",
+    "type": "INSTANCE",
+    "rect": {
+      "x": 24,
+      "y": 24,
+      "width": 345,
+      "height": 48
+    },
+    "fills": [],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2238",
+    "name": "Frame 8",
+    "type": "FRAME",
+    "rect": {
+      "x": 24,
+      "y": 24,
+      "width": 266,
+      "height": 48
+    },
+    "fills": [
+      {
+        "opacity": 0.0010000000474974513,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2239",
+    "name": "ic:outline-filter-alt",
+    "type": "FRAME",
+    "rect": {
+      "x": 44,
+      "y": 39,
+      "width": 18,
+      "height": 18
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "visible": false,
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2240",
+    "name": "Vector",
+    "type": "VECTOR",
+    "rect": {
+      "x": 46,
+      "y": 41,
+      "width": 14,
+      "height": 14
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2241",
+    "name": "Find a specialist...",
+    "type": "TEXT",
+    "rect": {
+      "x": 70,
+      "y": 37,
+      "width": 170,
+      "height": 22
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF Pro Text",
+      "fontPostScriptName": "SFProText-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 13.5,
+      "textAlignHorizontal": "LEFT",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.3059999942779541,
+      "lineHeightPx": 21.600000381469727,
+      "lineHeightPercent": 134.07528686523438,
+      "lineHeightPercentFontSize": 160,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Find a specialist..."
+  },
+  {
+    "id": "I1850:2289;1850:2242",
+    "name": "ri:search-line",
+    "type": "FRAME",
+    "rect": {
+      "x": 248,
+      "y": 39,
+      "width": 18,
+      "height": 18
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "visible": false,
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2243",
+    "name": "Vector",
+    "type": "VECTOR",
+    "rect": {
+      "x": 249.5,
+      "y": 40.5,
+      "width": 15,
+      "height": 15
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2244",
+    "name": "Frame 8",
+    "type": "FRAME",
+    "rect": {
+      "x": 302,
+      "y": 24,
+      "width": 67,
+      "height": 48
+    },
+    "fills": [
+      {
+        "opacity": 0.0010000000474974513,
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2245",
+    "name": "ic:outline-account-circle",
+    "type": "FRAME",
+    "rect": {
+      "x": 326.5,
+      "y": 33.75,
+      "width": 18,
+      "height": 18
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "visible": false,
+        "type": "SOLID",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2246",
+    "name": "Vector",
+    "type": "VECTOR",
+    "rect": {
+      "x": 328,
+      "y": 35.25,
+      "width": 15,
+      "height": 15
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2247",
+    "name": "Vector",
+    "type": "VECTOR",
+    "rect": {
+      "x": 332.88,
+      "y": 38.25,
+      "width": 5.25,
+      "height": 5.25
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": null,
+    "text": null
+  },
+  {
+    "id": "I1850:2289;1850:2248",
+    "name": "Profile",
+    "type": "TEXT",
+    "rect": {
+      "x": 311,
+      "y": 53.25,
+      "width": 49,
+      "height": 9
+    },
+    "fills": [
+      {
+        "blendMode": "NORMAL",
+        "type": "SOLID",
+        "color": {
+          "r": 0.03921568766236305,
+          "g": 0.09019608050584793,
+          "b": 0.2823529541492462,
+          "a": 1
+        }
+      }
+    ],
+    "style": {
+      "fontFamily": "SF UI Display",
+      "fontPostScriptName": "SFUIDisplay-Medium",
+      "fontStyle": "Medium",
+      "fontWeight": 500,
+      "textAutoResize": "HEIGHT",
+      "fontSize": 9,
+      "textAlignHorizontal": "CENTER",
+      "textAlignVertical": "CENTER",
+      "letterSpacing": -0.3059999942779541,
+      "lineHeightPx": 9,
+      "lineHeightPercent": 83.79705047607422,
+      "lineHeightPercentFontSize": 100,
+      "lineHeightUnit": "FONT_SIZE_%"
+    },
+    "text": "Profile"
+  }
+]

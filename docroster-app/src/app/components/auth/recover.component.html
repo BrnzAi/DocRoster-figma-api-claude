@@ -1,0 +1,50 @@
+<!-- Recover card overlay -->
+<div class="login-overlay">
+  <div class="login-card recover-card">
+    <!-- Real Logo from Figma -->
+    <div class="logo-section">
+      <img src="/assets/docroster-logo.png" alt="DocRoster" class="logo-image">
+    </div>
+
+    <!-- Form Container with 24px gap between sections -->
+    <div class="form-container">
+      <!-- Recover Form -->
+      <form [formGroup]="recoverForm" (ngSubmit)="onSubmit()" class="login-form">
+        <div class="form-group">
+          <input
+            id="email"
+            type="email"
+            formControlName="email"
+            placeholder="Registered email"
+            [class.invalid]="email?.invalid && (email?.dirty || email?.touched)"
+          />
+          <div class="error-message" *ngIf="email?.invalid && (email?.dirty || email?.touched)">
+            <span *ngIf="email?.errors?.['required']">Email is required</span>
+            <span *ngIf="email?.errors?.['email']">Please enter a valid email</span>
+          </div>
+        </div>
+
+        <div class="success-message" *ngIf="successMessage">
+          {{ successMessage }}
+        </div>
+
+        <div class="error-message global-error" *ngIf="errorMessage">
+          {{ errorMessage }}
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="recoverForm.invalid || loading">
+          <span *ngIf="!loading">Recover Password</span>
+          <span *ngIf="loading">Sending...</span>
+        </button>
+      </form>
+
+      <!-- Login Link -->
+      <div class="register-link">
+        <p>
+          Remember your password? 
+          <a href="javascript:void(0)" (click)="goToLogin()">Sign in!</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,144 +1,191 @@
-<div class="search-container">
-  <!-- Header -->
-  <header class="app-header">
-    <div class="header-content">
-      <h1 class="app-logo">DocRoster</h1>
-      <div class="header-actions">
-        <button class="profile-btn" *ngIf="currentUser()">
-          <img [src]="currentUser()?.avatar" alt="Profile" class="avatar-small" />
-          <span>{{ currentUser()?.name }}</span>
+<!-- Search Page Container -->
+<div class="search-page">
+  <!-- Map Background (Full Screen) -->
+  <div class="map-container">
+    <google-map
+      [options]="mapOptions"
+      [width]="'100%'"
+      [height]="'100%'"
+    >
+      <map-marker
+        *ngFor="let marker of markerPositions()"
+        [position]="marker.position"
+        [options]="marker.options"
+        (mapClick)="selectSpecialist(marker.specialist)"
+      />
+    </google-map>
+  </div>
+
+  <!-- Left Panel - 393px (Frame 1000002924) -->
+  <div class="left-panel">
+    <!-- Top Bar: Search + Profile Button -->
+    <div class="top-bar">
+      <!-- Search Box - 266x48px with filter + input + search -->
+      <div class="search-box">
+        <button class="icon-btn filter-btn" (click)="toggleFilters()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2.60585 1.75H11.4046L6.99645 7.2625L2.60585 1.75ZM0.186186 1.40875C1.96354 3.675 5.24549 7.875 5.24549 7.875V13.125C5.24549 13.6062 5.64144 14 6.12537 14H7.88513C8.36906 14 8.76501 13.6062 8.76501 13.125V7.875C8.76501 7.875 12.0382 3.675 13.8155 1.40875C13.9164 1.27958 13.9787 1.12484 13.9954 0.962156C14.0122 0.799473 13.9826 0.635385 13.9102 0.488575C13.8378 0.341764 13.7253 0.218132 13.5857 0.131754C13.4461 0.0453773 13.2849 -0.000273031 13.1204 1.22854e-06H0.88129C0.150991 1.22854e-06 -0.262552 0.831251 0.186186 1.40875Z" fill="#0A1748"/>
+          </svg>
         </button>
-        <button class="logout-btn" (click)="logout()">Logout</button>
+
+        <input
+          type="text"
+          placeholder="Find a specialist..."
+          [value]="searchQuery()"
+          (input)="onSearchInput($any($event.target).value)"
+          (keyup.enter)="performSearch()"
+          class="search-input"
+        />
+
+        <button class="icon-btn search-btn" (click)="performSearch()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M11.8374 10.7933L15 13.9552L13.9552 15L10.7933 11.8374C9.61682 12.7805 8.15349 13.2935 6.64566 13.2913C2.97726 13.2913 0 10.3141 0 6.64566C0 2.97726 2.97726 0 6.64566 0C10.3141 0 13.2913 2.97726 13.2913 6.64566C13.2935 8.15349 12.7805 9.61682 11.8374 10.7933ZM10.3562 10.2454C11.2931 9.28156 11.8164 7.98984 11.8145 6.64566C11.8145 3.79024 9.50108 1.47681 6.64566 1.47681C3.79024 1.47681 1.47681 3.79024 1.47681 6.64566C1.47681 9.50108 3.79024 11.8145 6.64566 11.8145C7.98984 11.8164 9.28156 11.2931 10.2454 10.3562L10.3562 10.2454Z" fill="#0A1748"/>
+          </svg>
+        </button>
       </div>
+
+      <!-- Profile Button - 67px with icon + text (Frame 8) -->
+      <button class="profile-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM5.5125 13.875C6.495 13.17 7.695 12.75 9 12.75C10.305 12.75 11.505 13.17 12.4875 13.875C11.505 14.58 10.305 15 9 15C7.695 15 6.495 14.58 5.5125 13.875ZM13.605 12.84C12.2911 11.8097 10.6697 11.2497 9 11.2497C7.33032 11.2497 5.70887 11.8097 4.395 12.84C3.49286 11.7639 2.99892 10.4042 3 9C3 5.685 5.685 3 9 3C12.315 3 15 5.685 15 9C15 10.4625 14.475 11.7975 13.605 12.84Z" fill="#0A1748"/>
+          <path d="M9 4.5C7.5525 4.5 6.375 5.6775 6.375 7.125C6.375 8.5725 7.5525 9.75 9 9.75C10.4475 9.75 11.625 8.5725 11.625 7.125C11.625 5.6775 10.4475 4.5 9 4.5ZM9 8.25C8.3775 8.25 7.875 7.7475 7.875 7.125C7.875 6.5025 8.3775 6 9 6C9.6225 6 10.125 6.5025 10.125 7.125C10.125 7.7475 9.6225 8.25 9 8.25Z" fill="#0A1748"/>
+        </svg>
+        <span class="profile-text">Profile</span>
+      </button>
     </div>
-  </header>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <!-- Search Bar -->
-      <div class="search-section">
-        <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Search specialists..."
-            [value]="searchQuery()"
-            (input)="searchQuery.set($any($event.target).value)"
-            (keyup.enter)="onSearch()"
-            class="search-input"
-          />
-          <button class="search-btn" (click)="onSearch()">
-            🔍
-          </button>
-        </div>
-        <button class="filter-btn" (click)="toggleFilters()">
-          🎛️ Filters {{ selectedSpecialties().length > 0 ? '(' + selectedSpecialties().length + ')' : '' }}
-        </button>
-      </div>
-
-      <!-- Filters Panel -->
-      <div class="filters-panel" *ngIf="showFilters()">
-        <div class="filters-header">
-          <h3>Filter by Specialty</h3>
-          <button class="clear-btn" (click)="clearFilters()" *ngIf="selectedSpecialties().length > 0">
-            Clear All
-          </button>
-        </div>
-        <div class="specialty-filters">
-          <label *ngFor="let specialty of specialties" class="filter-item">
-            <input
-              type="checkbox"
-              [checked]="selectedSpecialties().includes(specialty.id)"
-              (change)="onSpecialtyChange(specialty.id, $event)"
-            />
-            <span class="specialty-badge" [style.background]="specialty.color">
-              {{ specialty.name }}
-            </span>
-          </label>
-        </div>
+    <!-- Results Panel - Frame 24 (345x258+) -->
+    <div class="results-panel">
+      <!-- Search Results Header -->
+      <div class="results-heading">
+        <p class="results-label">SEARCH RESULTS FOR</p>
+        <h1 class="search-query">Find me an Occupational Therapist who travels to Thunder Bay for catastrophic assessments</h1>
       </div>
 
       <!-- Results List -->
-      <div class="results-section">
-        <div class="results-header">
-          <h3>{{ specialists().length }} Specialists Found</h3>
+      <div class="results-list">
+        @if (specialists().length === 0) {
+          <!-- Empty state -->
+          <div class="empty-state">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" stroke="rgba(10, 23, 72, 0.12)" stroke-width="4"/>
+              <path d="M32 20v16m0 4v4" stroke="rgba(10, 23, 72, 0.3)" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <h3>No specialists found</h3>
+            <p>Try adjusting your search or filters</p>
+          </div>
+        } @else {
+          @for (specialist of specialists(); track specialist.id; let i = $index) {
+            <div
+              class="result-item"
+              [class.selected]="selectedSpecialist()?.id === specialist.id"
+              (click)="selectSpecialist(specialist)"
+            >
+              <!-- Avatar with Number Badge -->
+              <div class="avatar-container">
+                <img [src]="specialist.avatar" [alt]="specialist.name" class="result-avatar" />
+                <div class="result-number">{{ i + 1 }}</div>
+              </div>
+
+              <!-- Info -->
+              <div class="result-info">
+                <h3 class="result-name">{{ specialist.name }}</h3>
+                <p class="result-details">{{ specialist.specialty.name }}, fee ${{ specialist.fee }}</p>
+                <p class="result-clinic">{{ specialist.clinic }}</p>
+                <p class="result-address">{{ specialist.location.address }}</p>
+              </div>
+            </div>
+          }
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters Modal -->
+  @if (showFilters()) {
+    <div class="filters-overlay" (click)="toggleFilters()">
+      <div class="filters-panel" (click)="$event.stopPropagation()">
+        <div class="filters-header">
+          <h2>Filter<br/>specialists</h2>
+          <div class="header-actions">
+            <!-- Apply & Reset buttons container (pro-act) -->
+            <div class="pro-act">
+              <button class="action-btn apply-btn" title="Apply" (click)="applyFilters()">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M16.25 5L7.5 13.75L3.75 10" stroke="#0A1748" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="action-btn reset-btn" title="Reset" (click)="clearFilters()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M11.6667 10C11.6667 9.08333 10.9167 8.33333 10 8.33333C9.08333 8.33333 8.33333 9.08333 8.33333 10C8.33333 10.9167 9.08333 11.6667 10 11.6667C10.9167 11.6667 11.6667 10.9167 11.6667 10ZM10 2.5C8.01088 2.5 6.10322 3.29018 4.6967 4.6967C3.29018 6.10322 2.5 8.01088 2.5 10H0L3.33333 13.3333L6.66667 10H4.16667C4.16667 6.775 6.775 4.16667 10 4.16667C13.225 4.16667 15.8333 6.775 15.8333 10C15.8345 11.0715 15.5402 12.1226 14.983 13.0377C14.4257 13.9529 13.627 14.6968 12.6746 15.1877C11.7221 15.6785 10.6528 15.8974 9.58411 15.8202C8.5154 15.743 7.48866 15.3727 6.61667 14.75L5.43333 15.95C6.37887 16.6756 7.48372 17.1654 8.65631 17.3788C9.8289 17.5922 11.0355 17.5231 12.176 17.1772C13.3166 16.8312 14.3582 16.2185 15.2147 15.3897C16.0712 14.5609 16.7179 13.5398 17.1011 12.4113C17.4842 11.2827 17.5929 10.079 17.4181 8.90008C17.2434 7.72112 16.7901 6.60078 16.096 5.63193C15.4018 4.66308 14.4868 3.87361 13.4266 3.32895C12.3665 2.78429 11.1919 2.50012 10 2.5Z" fill="#0A1748"/>
+                </svg>
+              </button>
+            </div>
+            <!-- Close button (separate) -->
+            <button class="action-btn close-btn" (click)="toggleFilters()">
+              <svg width="12.44" height="12.44" viewBox="0 0 14 14" fill="none">
+                <path d="M13 1L1 13M1 1L13 13" stroke="#0A1748" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="results-list">
-          <div
-            *ngFor="let specialist of specialists()"
-            class="specialist-card"
-            [class.selected]="selectedSpecialist()?.id === specialist.id"
-            (click)="selectSpecialist(specialist)"
-          >
-            <img [src]="specialist.avatar" [alt]="specialist.name" class="specialist-avatar" />
-            <div class="specialist-info">
-              <h4>{{ specialist.name }}</h4>
-              <div class="specialty-badge" [style.background]="specialist.specialty.color">
-                {{ specialist.specialty.name }}
-              </div>
-              <div class="rating">
-                <span class="stars">
-                  <span *ngFor="let star of getStarArray(specialist.rating)">
-                    {{ star ? '★' : '☆' }}
-                  </span>
-                </span>
-                <span class="rating-value">{{ specialist.rating }}</span>
-              </div>
-              <p class="location">📍 {{ specialist.location.city }}</p>
+
+        <div class="filters-content">
+          <div class="filter-section">
+            <h3>SORTING</h3>
+            <div class="filter-pills">
+              <button class="pill-btn" [class.active]="sortBy === 'fee'" (click)="sortBy = 'fee'">Fee</button>
+              <button class="pill-btn" [class.active]="sortBy === 'distance'" (click)="sortBy = 'distance'">Distance</button>
+              <button class="pill-btn" [class.active]="sortBy === 'availability'" (click)="sortBy = 'availability'">Availability</button>
+            </div>
+          </div>
+
+          <hr class="filter-divider" />
+
+          <div class="filter-section">
+            <h3>FEES</h3>
+            <div class="filter-pills">
+              <button class="pill-btn" [class.active]="feeFilter === 'low'" (click)="feeFilter = feeFilter === 'low' ? null : 'low'">Low</button>
+              <button class="pill-btn" [class.active]="feeFilter === 'medium'" (click)="feeFilter = feeFilter === 'medium' ? null : 'medium'">Medium</button>
+              <button class="pill-btn" [class.active]="feeFilter === 'high'" (click)="feeFilter = feeFilter === 'high' ? null : 'high'">High</button>
+            </div>
+          </div>
+
+          <hr class="filter-divider" />
+
+          <div class="filter-section">
+            <h3>GENDER</h3>
+            <div class="filter-pills">
+              <button class="pill-btn" [class.active]="genderFilter === 'any'" (click)="genderFilter = 'any'">Any</button>
+              <button class="pill-btn" [class.active]="genderFilter === 'male'" (click)="genderFilter = 'male'">Male</button>
+              <button class="pill-btn" [class.active]="genderFilter === 'female'" (click)="genderFilter = 'female'">Female</button>
+            </div>
+          </div>
+
+          <hr class="filter-divider" />
+
+          <div class="filter-section">
+            <h3>LOCATION</h3>
+            <div class="filter-pills">
+              <button class="pill-btn" [class.active]="locationFilter === 'vancouver'" (click)="toggleLocationFilter('vancouver')">Vancouver</button>
+              <button class="pill-btn" [class.active]="locationFilter === 'belleville'" (click)="toggleLocationFilter('belleville')">Belleville</button>
+              <button class="pill-btn" [class.active]="locationFilter === 'sault'" (click)="toggleLocationFilter('sault')">Sault Ste. Marie</button>
+              <button class="pill-btn" [class.active]="locationFilter === 'thunder'" (click)="toggleLocationFilter('thunder')">Thunder Bay</button>
+            </div>
+          </div>
+
+          <hr class="filter-divider" />
+
+          <div class="filter-section">
+            <h3>TYPE</h3>
+            <div class="filter-pills">
+              <button class="pill-btn" [class.active]="typeFilter === 'hybrid'" (click)="toggleTypeFilter('hybrid')">Hybrid</button>
+              <button class="pill-btn" [class.active]="typeFilter === 'in-person'" (click)="toggleTypeFilter('in-person')">In-person</button>
+              <button class="pill-btn" [class.active]="typeFilter === 'virtual'" (click)="toggleTypeFilter('virtual')">Virtual</button>
             </div>
           </div>
         </div>
       </div>
-    </aside>
-
-    <!-- Map Container -->
-    <div class="map-container">
-      <google-map
-        [options]="mapOptions"
-        [width]="'100%'"
-        [height]="'100%'"
-        (boundsChanged)="onBoundsChanged()"
-      >
-        <map-marker
-          *ngFor="let marker of markerPositions()"
-          [position]="marker.position"
-          [options]="marker.options"
-          (mapClick)="onMarkerClick(marker.specialist)"
-        />
-      </google-map>
     </div>
-  </div>
-
-  <!-- Specialist Detail Modal -->
-  <div class="specialist-modal" *ngIf="selectedSpecialist()" (click)="closeDetails()">
-    <div class="modal-content" (click)="$event.stopPropagation()">
-      <button class="close-btn" (click)="closeDetails()">✕</button>
-      <div class="modal-body">
-        <img
-          [src]="selectedSpecialist()!.avatar"
-          [alt]="selectedSpecialist()!.name"
-          class="modal-avatar"
-        />
-        <h2>{{ selectedSpecialist()!.name }}</h2>
-        <div class="specialty-badge" [style.background]="selectedSpecialist()!.specialty.color">
-          {{ selectedSpecialist()!.specialty.name }}
-        </div>
-        <div class="rating">
-          <span class="stars">⭐</span>
-          <span class="rating-value">{{ selectedSpecialist()!.rating }}</span>
-          <span class="reviews">({{ selectedSpecialist()!.reviewCount }} reviews)</span>
-        </div>
-        <p class="description">{{ selectedSpecialist()!.description }}</p>
-        <div class="contact-info">
-          <p>📞 {{ selectedSpecialist()!.phone }}</p>
-          <p>📍 {{ selectedSpecialist()!.address }}</p>
-          <p>🗣️ {{ selectedSpecialist()!.languages.join(', ') }}</p>
-        </div>
-        <button class="view-details-btn" (click)="viewDetails(selectedSpecialist()!)">
-          View Full Profile
-        </button>
-      </div>
-    </div>
-  </div>
+  }
 </div>

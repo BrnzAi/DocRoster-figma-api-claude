@@ -1,237 +1,359 @@
-:host {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-// Full-page map background
-.map-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-
-  google-map {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-// Overlay container for centering login card
+// Login overlay
 .login-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.2); // Subtle overlay
+  align-items: center;
+  z-index: 10;
 }
 
-// Login card
+// Login card - EXACT Figma specs
+// Main container with 24px gap between sections
 .login-card {
-  background: white;
-  border-radius: 16px;
-  padding: 3rem 2.5rem;
-  max-width: 440px;
-  width: 100%;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  animation: slideUp 0.4s ease-out;
+  display: inline-flex;
+  padding: 44px 0 24px 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 44px; // Gap between logo and form container
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Header
-.login-header {
-  text-align: center;
-  margin-bottom: 2rem;
-
-  .logo {
-    margin-bottom: 0.5rem;
-
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #1a73e8;
-      margin: 0;
-      letter-spacing: -0.5px;
-    }
-  }
-
-  .tagline {
-    color: #5f6368;
-    font-size: 0.95rem;
-    margin: 0;
+// Logo section - EXACT Figma specs
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .logo-image {
+    width: 258px;
+    height: 160px;
+    aspect-ratio: 129/80;
+    object-fit: contain;
   }
 }
 
-// Form styles
-.login-form {
-  .form-group {
-    margin-bottom: 1.5rem;
+// Form container - Frame 1000002909 wrapper
+// VERTICAL layout with 24px gap between all sections
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; // EXACT gap from Figma between all children
+  width: 393px;
+}
 
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: #3c4043;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-
-    input {
-      width: 100%;
-      padding: 0.875rem 1rem;
-      border: 1.5px solid #dadce0;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: all 0.2s;
-      box-sizing: border-box;
-
-      &:focus {
-        outline: none;
-        border-color: #1a73e8;
-        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
-      }
-
-      &.invalid {
-        border-color: #d93025;
-      }
-
-      &::placeholder {
-        color: #9aa0a6;
-      }
-    }
-
-    .error-message {
-      display: block;
-      color: #d93025;
-      font-size: 0.8rem;
-      margin-top: 0.4rem;
-    }
-  }
-
-  .global-error {
-    background: #fce8e6;
-    color: #d93025;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-  }
-
-  // Buttons
-  .btn {
-    width: 100%;
-    padding: 0.875rem 1.5rem;
+// Sign in buttons container - ONE ROW - EXACT Figma specs
+// Frame 1000002907: HORIZONTAL layout, 8px gap between buttons
+.sign-in-buttons {
+  display: flex;
+  width: 345px;
+  gap: 8px; // EXACT gap from Figma
+  
+  .sign-in-btn {
+    // Each button: 168.5px width (stretched to fill with flex: 1 0 0)
+    display: flex;
+    height: 46px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0; // Makes buttons stretch equally
+    border-radius: 24px;
+    background: #000;
+    backdrop-filter: blur(12px);
     border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+    color: #FFFFFF;
+    font-family: "SF UI Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+    
+    svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    
+    span {
+      white-space: nowrap;
+      color: #FFFFFF;
+    }
+  }
+  
+  .google-btn,
+  .apple-btn {
+    background: #000;
+  }
+}
+
+// Divider - EXACT Figma specs
+// Frame 1000002775: height 22px, padding 0 24px, gap 16px
+// OR text: SF Pro Text 14px, weight 400, line-height 160%, letter-spacing -0.408px, opacity 0.4
+.divider {
+  display: flex;
+  height: 22px;
+  padding: 0 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch; // Full width of parent (393px)
+  
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(10, 23, 72, 0.20);
+  }
+  
+  span {
+    color: #0A1748;
+    text-align: center;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: -0.408px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+}
+
+// Login form
+// Frame 38: VERTICAL layout, 8px gap between inputs
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; // EXACT gap from Figma
+  width: 345px;
+}
+
+// Form group
+// Each input frame: 345x48, padding 12px 16px, gap 12px
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  input {
+    width: 345px;
+    height: 48px;
+    padding: 12px 16px;
     box-sizing: border-box;
-
-    &:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
+    border: 1px solid rgba(10, 23, 72, 0.20);
+    border-radius: 12px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    color: #0A1748;
+    background: rgba(255, 255, 255, 0.90);
+    transition: all 0.2s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: rgba(10, 23, 72, 0.60);
+      background: rgba(255, 255, 255, 1);
+    }
+    
+    &::placeholder {
+      color: rgba(10, 23, 72, 0.40);
+    }
+    
+    &.invalid {
+      border-color: #DC3545;
     }
   }
-
-  .btn-primary {
-    background: #1a73e8;
-    color: white;
-
-    &:not(:disabled):hover {
-      background: #1557b0;
-      box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
-    }
+  
+  .error-message {
+    font-size: 13px;
+    color: #DC3545;
+    font-family: "SF UI Display", -apple-system, BlinkMacSystemFont, sans-serif;
   }
+}
 
-  // Divider
-  .divider {
+// Password group with question circle icon - EXACT Figma specs
+.password-group {
+  position: relative;
+  
+  input {
+    padding-right: 48px;
+  }
+  
+  .help-icon {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+    cursor: help;
+    transition: opacity 0.2s ease;
     display: flex;
     align-items: center;
-    margin: 1.5rem 0;
-    color: #9aa0a6;
-    font-size: 0.85rem;
-
-    &::before,
-    &::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: #dadce0;
+    justify-content: center;
+    
+    &:hover {
+      opacity: 0.8;
     }
-
-    span {
-      padding: 0 1rem;
-    }
-  }
-
-  // Demo buttons
-  .demo-section {
-    .demo-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-
-    .btn-demo {
-      background: #f8f9fa;
-      color: #3c4043;
-      border: 1.5px solid #dadce0;
-
-      &:not(:disabled):hover {
-        background: #e8eaed;
-        border-color: #bdc1c6;
-      }
-    }
-  }
-
-  .info-text {
-    text-align: center;
-    margin-top: 1.5rem;
-
-    p {
-      color: #5f6368;
-      font-size: 0.85rem;
-      margin: 0;
+    
+    svg {
+      width: 24px;
+      height: 24px;
     }
   }
 }
 
-// Responsive
-@media (max-width: 768px) {
-  .login-overlay {
-    padding: 1rem;
+// Global error message
+.global-error {
+  padding: 12px;
+  background: rgba(220, 53, 69, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  color: #DC3545;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  .error-recover-link {
+    color: #0A1748;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 13px;
+    
+    &:hover {
+      color: rgba(10, 23, 72, 0.80);
+    }
   }
+}
 
+// Forgot password link
+.forgot-password-link {
+  text-align: right;
+  margin-top: -4px;
+  
+  a {
+    color: rgba(10, 23, 72, 0.60);
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    
+    &:hover {
+      color: #0A1748;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Primary button - EXACT Figma specs
+.btn-primary {
+  display: flex;
+  width: 345px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px solid rgba(10, 23, 72, 0.40);
+  background: rgba(10, 23, 72, 0.80);
+  backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  font-family: "SF UI Display", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+  
+  &:hover:not(:disabled) {
+    background: rgba(10, 23, 72, 0.90);
+  }
+  
+  &:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+  
+  &:disabled {
+    background: rgba(10, 23, 72, 0.40);
+    cursor: not-allowed;
+  }
+}
+
+// Register link - EXACT Figma specs
+// 24px gap handled by form-container, SF Pro Text 14px, weight 700, line-height 110%
+.register-link {
+  text-align: center;
+  
+  p {
+    margin: 0;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.408px;
+    color: #0A1748;
+    
+    a {
+      color: rgba(10, 23, 72, 0.80);
+      font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: -0.408px;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
+      
+      &:hover {
+        color: #0A1748;
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
   .login-card {
-    padding: 2rem 1.5rem;
+    width: calc(100vw - 32px);
+    margin: 16px;
   }
-
-  .login-header .logo h1 {
-    font-size: 2rem;
+  
+  .sign-in-buttons {
+    flex-direction: column;
+    
+    .sign-in-btn {
+      width: 100%;
+    }
   }
-
-  .demo-section .demo-buttons {
-    grid-template-columns: 1fr;
+  
+  .btn-primary {
+    width: 100%;
+    max-width: 345px;
   }
 }
