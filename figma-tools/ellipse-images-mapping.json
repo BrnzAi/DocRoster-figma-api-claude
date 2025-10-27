@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1814:1178",
+    "name": "Ellipse 5",
+    "imageRef": "9856e5975a097921bd1696f7dd0337d8e718f44d",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 414,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-1.png",
+    "path": "assets/specialists/specialist-1.png"
+  },
+  {
+    "id": "1814:1186",
+    "name": "Ellipse 5",
+    "imageRef": "70e51585e11f4a0178bf88542ca920ad50049469",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 534.5,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-2.png",
+    "path": "assets/specialists/specialist-2.png"
+  },
+  {
+    "id": "1814:1194",
+    "name": "Ellipse 5",
+    "imageRef": "0348130623d6d9afbf65755a1a59d5135047c28e",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 655,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-3.png",
+    "path": "assets/specialists/specialist-3.png"
+  },
+  {
+    "id": "1814:1202",
+    "name": "Ellipse 5",
+    "imageRef": "55e0ba5eee828c51b1070a13e622d0fbbb3534fc",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 783,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-4.png",
+    "path": "assets/specialists/specialist-4.png"
+  },
+  {
+    "id": "1814:1210",
+    "name": "Ellipse 5",
+    "imageRef": "cdc6c364019faca162f0b2e545770a79adc9cb0c",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 911,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-5.png",
+    "path": "assets/specialists/specialist-5.png"
+  },
+  {
+    "id": "1814:1218",
+    "name": "Ellipse 5",
+    "imageRef": "00701c61ddcf9cbec5e07ac69c2eb20a20d949ac",
+    "context": "",
+    "parentName": "",
+    "rect": {
+      "x": 24,
+      "y": 1039,
+      "width": 56,
+      "height": 56
+    },
+    "filename": "specialist-6.png",
+    "path": "assets/specialists/specialist-6.png"
+  }
+]

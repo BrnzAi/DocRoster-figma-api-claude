@@ -13,7 +13,7 @@ export class ProfileComponent {
   // Mock user data
   user = {
     name: 'Dr. Sarah Johnson',
-    avatar: 'assets/specialists/specialist-1.jpg',
+    avatar: 'assets/specialists/specialist-1.png',
     email: 'sarah.johnson@example.com',
     phone: '+1 (555) 123-4567',
     stats: {
@@ -28,13 +28,22 @@ export class ProfileComponent {
       id: 1,
       name: 'Dr. Emily Carter',
       specialty: 'Physiatrist',
-      avatar: 'assets/specialists/specialist-2.jpg'
+      schedule: 'Mon-Fri 9:00 AM - 5:00 PM',
+      avatar: 'assets/specialists/specialist-2.png'
     },
     {
       id: 2,
       name: 'Dr. Michael Brown',
       specialty: 'Occupational Therapist',
-      avatar: 'assets/specialists/specialist-3.jpg'
+      schedule: 'Mon, Wed, Fri 10:00 AM - 6:00 PM',
+      avatar: 'assets/specialists/specialist-3.png'
+    },
+    {
+      id: 3,
+      name: 'Dr. Jennifer Davis',
+      specialty: 'Physical Therapist',
+      schedule: 'Tue-Thu 8:00 AM - 4:00 PM',
+      avatar: 'assets/specialists/specialist-4.png'
     }
   ];
 

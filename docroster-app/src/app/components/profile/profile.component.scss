@@ -1,4 +1,4 @@
-// Profile Page - 393x808px from profile-layout.json
+// Profile Page - 393x808px
 
 .profile-page {
   position: relative;
@@ -6,7 +6,7 @@
   height: 808px;
   margin: 0 auto;
   background: #FFFFFF;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 // Top Story - 465x444 with gradient overlay
@@ -28,7 +28,7 @@
     object-fit: cover;
   }
 
-  // Gradient overlay - GRADIENT_LINEAR from Figma
+  // Gradient overlay - GRADIENT_LINEAR
   &::after {
     content: '';
     position: absolute;
@@ -41,13 +41,13 @@
   }
 }
 
-// Frame 1000002833 - Text overlay at y:300 (393x144)
+// Frame 1000002833 - Text overlay at y:300
 .content-overlay {
   position: absolute;
   top: 300px;
   left: 0;
   right: 0;
-  padding: 0 36px;
+  padding: 0 24px;
   z-index: 1;
 }
 
@@ -60,7 +60,7 @@
   margin: 0 0 12px 0;
 }
 
-// Contact buttons - same row with icons
+// Frame 1000002895 - Contact buttons with CORRECT Figma styles
 .contact-buttons {
   display: flex;
   gap: 12px;
@@ -68,15 +68,17 @@
 }
 
 .contact-btn {
-  flex: 1;
-  height: 44px;
   display: flex;
-  align-items: center;
+  height: 46px;
+  padding: 12px 24px 12px 18px;
   justify-content: center;
+  align-items: center;
   gap: 8px;
-  background: #FFFFFF;
-  border: 1px solid rgba(10, 23, 72, 0.12);
-  border-radius: 12px;
+  flex: 1;
+  border-radius: 1000px;
+  border: 1px solid rgba(10, 23, 72, 0.20);
+  backdrop-filter: blur(12px);
+  background: transparent;
   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -85,13 +87,14 @@
   transition: all 0.2s;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
   }
 
   &:hover {
     background: rgba(10, 23, 72, 0.04);
-    border-color: #0A1748;
+    border-color: rgba(10, 23, 72, 0.30);
   }
 
   &:active {
@@ -99,39 +102,41 @@
   }
 }
 
-// Pro-act Button (Edit/Logout) - x:24, y:24, 89x36
+// Pro-act Button (Edit/Logout) - at top: 24px, left: 24px
 .pro-act-btn {
   position: absolute;
   top: 24px;
   left: 24px;
-  width: 89px;
-  height: 36px;
+  width: 82px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 9px 6px;
-  background: #FFFFFF;
-  border: none;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(30px);
   border-radius: 1000px;
+  border: none;
+  padding: 8px 12px;
   cursor: pointer;
   z-index: 10;
   transition: all 0.2s;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
   }
 
   .divider {
     width: 1px;
-    height: 18px;
-    background: rgba(10, 23, 72, 0.12);
+    height: 20px;
+    background: rgba(10, 23, 72, 0.20);
   }
 
   &:hover {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 8px rgba(10, 23, 72, 0.1);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(10, 23, 72, 0.12);
   }
 
   &:active {
@@ -139,97 +144,99 @@
   }
 }
 
-// Close Button - x:333, y:24, 36x36
+// Close Button - at top: 24px, right: 24px
 .close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 6px;
   background: #FFFFFF;
+  border-radius: 50%;
   border: none;
-  border-radius: 750px;
   cursor: pointer;
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(10, 23, 72, 0.08);
   transition: all 0.2s;
 
+  svg {
+    width: 12.44px;
+    height: 12.44px;
+  }
+
   &:hover {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 8px rgba(10, 23, 72, 0.1);
+    background: rgba(10, 23, 72, 0.04);
+    box-shadow: 0 4px 12px rgba(10, 23, 72, 0.12);
   }
 
   &:active {
-    transform: scale(0.94);
+    transform: scale(0.95);
   }
 }
 
-// Frame 1000002888 - Statistics Section (y:444, h:209)
+// Statistics Section - Frame 1000002888
 .statistics-section {
-  position: absolute;
-  top: 444px;
-  left: 0;
-  right: 0;
-  height: 209px;
-  padding: 32px 24px;
-  background: #FFFFFF;
-
-  h2 {
-    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #0A1748;
-    margin: 0 0 12px 0;
-  }
+  padding: 24px 24px 16px 24px;
+  margin-top: 20px;
 }
 
-.stats-grid {
+.section-heading {
+  color: #0A1748;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+}
+
+.stats-container {
   display: flex;
-  flex-direction: column;
   gap: 12px;
 }
 
-.stat-item {
+.stats-content {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(10, 23, 72, 0.08);
-
-  &:last-child {
-    border-bottom: none;
-  }
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(10, 23, 72, 0.08);
+  background: rgba(10, 23, 72, 0.02);
+  min-height: 80px;
 }
 
-.stat-label {
-  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  color: rgba(10, 23, 72, 0.6);
-}
-
-.stat-value {
-  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21px;
+.stat-big {
   color: #0A1748;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.364px;
+  margin-bottom: 4px;
+  text-align: left;
 }
 
-// Frame 1000002923 - Your Specialists Section (y:653, h:300+)
+.stat-small {
+  color: rgba(10, 23, 72, 0.64);
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.078px;
+  text-align: left;
+}
+
+// Your Specialists Section - Frame 1000002923
 .specialists-section {
-  position: absolute;
-  top: 653px;
-  left: 0;
-  right: 0;
   padding: 24px;
-  background: #FFFFFF;
 }
 
 .section-header {
@@ -239,12 +246,6 @@
   margin-bottom: 16px;
 
   h2 {
-    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #0A1748;
     margin: 0;
   }
 }
@@ -252,16 +253,16 @@
 .add-specialist-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 36px;
-  padding: 9px 16px;
-  background: #0A1748;
-  border: none;
-  border-radius: 12px;
+  gap: 4px;
+  height: 32px;
+  padding: 6px 12px;
+  background: rgba(10, 23, 72, 0.04);
+  border: 1px solid rgba(10, 23, 72, 0.08);
+  border-radius: 1000px;
+  color: #0A1748;
   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #FFFFFF;
   cursor: pointer;
   transition: all 0.2s;
 
@@ -271,19 +272,18 @@
   }
 
   &:hover {
-    background: #0D1F5C;
-    box-shadow: 0 2px 8px rgba(10, 23, 72, 0.2);
+    background: rgba(10, 23, 72, 0.08);
+    border-color: rgba(10, 23, 72, 0.12);
   }
 
   &:active {
-    transform: scale(0.98);
+    transform: scale(0.96);
   }
 }
 
 .specialists-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
 }
 
 .specialist-item {
@@ -291,23 +291,25 @@
   align-items: center;
   gap: 12px;
   padding: 12px;
-  background: #FFFFFF;
-  border: 1px solid rgba(10, 23, 72, 0.08);
-  border-radius: 12px;
   transition: all 0.2s;
 
   &:hover {
-    background: rgba(10, 23, 72, 0.02);
-    border-color: rgba(10, 23, 72, 0.12);
+    background: rgba(10, 23, 72, 0.04);
   }
 }
 
 .specialist-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  object-fit: cover;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
   flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .specialist-info {
@@ -315,23 +317,22 @@
   min-width: 0;
 
   h3 {
-    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
     color: #0A1748;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.408px;
     margin: 0 0 4px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   p {
+    color: rgba(10, 23, 72, 0.64);
     font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 17px;
-    color: rgba(10, 23, 72, 0.6);
+    line-height: 18px;
+    letter-spacing: -0.078px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -351,23 +352,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  border: 1px solid rgba(10, 23, 72, 0.12);
-  border-radius: 8px;
+  background: rgba(10, 23, 72, 0.04);
+  border: 1px solid rgba(10, 23, 72, 0.08);
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.2s;
 
   svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
   &:hover {
-    background: rgba(10, 23, 72, 0.04);
-    border-color: #0A1748;
+    background: rgba(10, 23, 72, 0.08);
+    border-color: rgba(10, 23, 72, 0.12);
   }
 
   &:active {
-    transform: scale(0.94);
+    transform: scale(0.92);
   }
 }
