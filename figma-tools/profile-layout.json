@@ -1,0 +1,463 @@
+{
+  "name": "profile",
+  "id": "1802:304",
+  "width": 393,
+  "height": 808,
+  "children": [
+    {
+      "name": "top story",
+      "type": "GROUP",
+      "x": -36,
+      "y": 0,
+      "width": 465,
+      "height": 444,
+      "fills": [],
+      "strokes": [],
+      "effects": [],
+      "children": [
+        {
+          "name": "image",
+          "type": "RECTANGLE",
+          "x": 0,
+          "y": 0,
+          "width": 465,
+          "height": 420,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "IMAGE",
+              "scaleMode": "FILL",
+              "imageRef": "a6a614b0bf606ecd5f8475847fa9cb621db06099"
+            },
+            {
+              "blendMode": "NORMAL",
+              "type": "IMAGE",
+              "scaleMode": "FILL",
+              "imageRef": "c9b851b0ed506dc0193e3c103ea3d82824ee40c2"
+            },
+            {
+              "blendMode": "NORMAL",
+              "type": "IMAGE",
+              "scaleMode": "FILL",
+              "imageRef": "a50069ac21a8cf4d9fd9203ee7dfd517abfaba96"
+            },
+            {
+              "blendMode": "NORMAL",
+              "visible": false,
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            },
+            {
+              "blendMode": "NORMAL",
+              "visible": false,
+              "type": "IMAGE",
+              "scaleMode": "STRETCH",
+              "imageRef": "5ec873218fc342052ff708e0c59b1dbda13ee2d0",
+              "imageTransform": [
+                [
+                  1.322297215461731,
+                  0,
+                  -0.16114863753318787
+                ],
+                [
+                  0,
+                  1.928604006767273,
+                  -0.3719450831413269
+                ]
+              ]
+            },
+            {
+              "blendMode": "NORMAL",
+              "type": "GRADIENT_LINEAR",
+              "gradientHandlePositions": [
+                {
+                  "x": 0.5010753067033941,
+                  "y": 0.50126581976983
+                },
+                {
+                  "x": 0.5000000272162823,
+                  "y": 0.9999999796439626
+                },
+                {
+                  "x": 0.25170822676632776,
+                  "y": 0.5005207394187979
+                }
+              ],
+              "gradientStops": [
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 0
+                  },
+                  "position": 0
+                },
+                {
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "position": 1
+                }
+              ]
+            }
+          ],
+          "strokes": []
+        },
+        {
+          "name": "Frame 1000002833",
+          "type": "FRAME",
+          "x": 36,
+          "y": 300,
+          "width": 393,
+          "height": 144,
+          "fills": [],
+          "strokes": []
+        }
+      ]
+    },
+    {
+      "name": "Frame 1000002923",
+      "type": "FRAME",
+      "x": 0,
+      "y": 653,
+      "width": 393,
+      "height": 300,
+      "fills": [],
+      "strokes": [],
+      "effects": [],
+      "layoutMode": "VERTICAL",
+      "children": [
+        {
+          "name": "Frame 1000002882",
+          "type": "FRAME",
+          "x": 0,
+          "y": 0,
+          "width": 393,
+          "height": 300,
+          "fills": [],
+          "strokes": [
+            {
+              "opacity": 0.10000000149011612,
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.03921568766236305,
+                "g": 0.09019608050584793,
+                "b": 0.2823529541492462,
+                "a": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Frame 1000002888",
+      "type": "FRAME",
+      "x": 0,
+      "y": 444,
+      "width": 393,
+      "height": 209,
+      "fills": [],
+      "strokes": [
+        {
+          "opacity": 0.10000000149011612,
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.03921568766236305,
+            "g": 0.09019608050584793,
+            "b": 0.2823529541492462,
+            "a": 1
+          }
+        }
+      ],
+      "effects": [],
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 12,
+      "paddingLeft": 24,
+      "paddingRight": 24,
+      "paddingTop": 32,
+      "paddingBottom": 32,
+      "children": [
+        {
+          "name": "statistics",
+          "type": "TEXT",
+          "x": 24,
+          "y": 32,
+          "width": 104,
+          "height": 22,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.03921568766236305,
+                "g": 0.09019608050584793,
+                "b": 0.2823529541492462,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": [],
+          "characters": "statistics",
+          "style": {
+            "fontFamily": "SF Pro Text",
+            "fontPostScriptName": "SFProText-Bold",
+            "fontStyle": "Bold",
+            "fontWeight": 700,
+            "textCase": "UPPER",
+            "textAutoResize": "WIDTH_AND_HEIGHT",
+            "fontSize": 18,
+            "textAlignHorizontal": "LEFT",
+            "textAlignVertical": "CENTER",
+            "letterSpacing": -0.40799999237060547,
+            "lineHeightPx": 21.600000381469727,
+            "lineHeightPercent": 100.55647277832031,
+            "lineHeightPercentFontSize": 120.00000762939453,
+            "lineHeightUnit": "FONT_SIZE_%"
+          }
+        },
+        {
+          "name": "Frame 1000002854",
+          "type": "FRAME",
+          "x": 24,
+          "y": 66,
+          "width": 345,
+          "height": 111,
+          "fills": [],
+          "strokes": []
+        }
+      ]
+    },
+    {
+      "name": "pro-act",
+      "type": "INSTANCE",
+      "x": 24,
+      "y": 24,
+      "width": 89,
+      "height": 36,
+      "fills": [
+        {
+          "opacity": 0.0010000000474974513,
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "opacity": 0.11999999731779099,
+          "blendMode": "NORMAL",
+          "visible": false,
+          "type": "SOLID",
+          "color": {
+            "r": 0.03921568766236305,
+            "g": 0.09019608050584793,
+            "b": 0.2823529541492462,
+            "a": 1
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "GLASS",
+          "visible": true
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "r": 0.03921568766236305,
+            "g": 0.09019608050584793,
+            "b": 0.2823529541492462,
+            "a": 0.23999999463558197
+          },
+          "blendMode": "NORMAL",
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 48,
+          "showShadowBehindNode": false
+        }
+      ],
+      "cornerRadius": 1000,
+      "layoutMode": "HORIZONTAL",
+      "itemSpacing": 12,
+      "paddingLeft": 9,
+      "paddingRight": 9,
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "children": [
+        {
+          "name": "ic:outline-mode-edit",
+          "type": "FRAME",
+          "x": 12,
+          "y": 8,
+          "width": 20,
+          "height": 20,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "visible": false,
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": []
+        },
+        {
+          "name": "Rectangle 8",
+          "type": "RECTANGLE",
+          "x": 44,
+          "y": 8,
+          "width": 1,
+          "height": 20,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.03921568766236305,
+                "g": 0.09019608050584793,
+                "b": 0.2823529541492462,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": []
+        },
+        {
+          "name": "ic:outline-logout",
+          "type": "FRAME",
+          "x": 57,
+          "y": 8,
+          "width": 20,
+          "height": 20,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "visible": false,
+              "type": "SOLID",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": []
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "type": "INSTANCE",
+      "x": 333,
+      "y": 24,
+      "width": 36,
+      "height": 36,
+      "fills": [
+        {
+          "opacity": 0.0010000000474974513,
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "opacity": 0.11999999731779099,
+          "blendMode": "NORMAL",
+          "visible": false,
+          "type": "SOLID",
+          "color": {
+            "r": 0.03921568766236305,
+            "g": 0.09019608050584793,
+            "b": 0.2823529541492462,
+            "a": 1
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "GLASS",
+          "visible": true
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "r": 0.03921568766236305,
+            "g": 0.09019608050584793,
+            "b": 0.2823529541492462,
+            "a": 0.23999999463558197
+          },
+          "blendMode": "NORMAL",
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "radius": 48,
+          "showShadowBehindNode": false
+        }
+      ],
+      "cornerRadius": 750,
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 1.5,
+      "paddingLeft": 9,
+      "paddingRight": 9,
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "children": [
+        {
+          "name": "SF Symbol / xmark",
+          "type": "VECTOR",
+          "x": 11.77783203125,
+          "y": 11.7777099609375,
+          "width": 12.444580078125,
+          "height": 12.44459342956543,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.03921568766236305,
+                "g": 0.09019608050584793,
+                "b": 0.2823529541492462,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": []
+        }
+      ]
+    }
+  ]
+}

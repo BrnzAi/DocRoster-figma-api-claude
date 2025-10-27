@@ -236,6 +236,13 @@ export class SearchComponent implements OnInit {
   }
 
   /**
+   * Navigate to profile page
+   */
+  navigateToProfile(): void {
+    this.router.navigate(['/profile']);
+  }
+
+  /**
    * Get star array for rating display
    */
   getStarArray(rating: number): boolean[] {
